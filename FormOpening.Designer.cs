@@ -36,31 +36,31 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanelBottom = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonClient = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonNews = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
+            this.buttonTools = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
+            this.buttonUpdates = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
+            this.buttonSetup = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.labelClient = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.labelNews = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.label = new System.Windows.Forms.Label();
+            this.labelTools = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
+            this.labelUpdates = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
+            this.labelSetup = new System.Windows.Forms.Label();
             this.tableLayoutPanelTop = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanelScreenConf = new System.Windows.Forms.FlowLayoutPanel();
+            this.pictureBoxMain = new System.Windows.Forms.PictureBox();
             this.buttonExit = new System.Windows.Forms.Button();
             this.buttonMaximize = new System.Windows.Forms.Button();
             this.buttonMinimize = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             menuStripMain = new System.Windows.Forms.MenuStrip();
             menuStripMain.SuspendLayout();
             this.tableLayoutPanelBottom.SuspendLayout();
@@ -76,7 +76,7 @@
             this.panel10.SuspendLayout();
             this.tableLayoutPanelTop.SuspendLayout();
             this.flowLayoutPanelScreenConf.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMain)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStripMain
@@ -139,63 +139,63 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.buttonClient);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
-            // button1
+            // buttonClient
             // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.buttonClient, "buttonClient");
+            this.buttonClient.Name = "buttonClient";
+            this.buttonClient.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.buttonNews);
             resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
             // 
-            // button2
+            // buttonNews
             // 
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.buttonNews, "buttonNews");
+            this.buttonNews.Name = "buttonNews";
+            this.buttonNews.UseVisualStyleBackColor = true;
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.button3);
+            this.panel3.Controls.Add(this.buttonTools);
             resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Name = "panel3";
             // 
-            // button3
+            // buttonTools
             // 
-            resources.ApplyResources(this.button3, "button3");
-            this.button3.Name = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.buttonTools, "buttonTools");
+            this.buttonTools.Name = "buttonTools";
+            this.buttonTools.UseVisualStyleBackColor = true;
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.button4);
+            this.panel4.Controls.Add(this.buttonUpdates);
             resources.ApplyResources(this.panel4, "panel4");
             this.panel4.Name = "panel4";
             // 
-            // button4
+            // buttonUpdates
             // 
-            resources.ApplyResources(this.button4, "button4");
-            this.button4.Name = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.buttonUpdates, "buttonUpdates");
+            this.buttonUpdates.Name = "buttonUpdates";
+            this.buttonUpdates.UseVisualStyleBackColor = true;
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.button5);
+            this.panel5.Controls.Add(this.buttonSetup);
             resources.ApplyResources(this.panel5, "panel5");
             this.panel5.Name = "panel5";
             // 
-            // button5
+            // buttonSetup
             // 
-            resources.ApplyResources(this.button5, "button5");
-            this.button5.Name = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.buttonSetup, "buttonSetup");
+            this.buttonSetup.Name = "buttonSetup";
+            this.buttonSetup.UseVisualStyleBackColor = true;
             // 
             // panel6
             // 
@@ -223,39 +223,39 @@
             // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.label);
+            this.panel8.Controls.Add(this.labelTools);
             resources.ApplyResources(this.panel8, "panel8");
             this.panel8.Name = "panel8";
             // 
-            // label
+            // labelTools
             // 
-            resources.ApplyResources(this.label, "label");
-            this.label.ForeColor = System.Drawing.SystemColors.Control;
-            this.label.Name = "label";
+            resources.ApplyResources(this.labelTools, "labelTools");
+            this.labelTools.ForeColor = System.Drawing.SystemColors.Control;
+            this.labelTools.Name = "labelTools";
             // 
             // panel9
             // 
-            this.panel9.Controls.Add(this.label4);
+            this.panel9.Controls.Add(this.labelUpdates);
             resources.ApplyResources(this.panel9, "panel9");
             this.panel9.Name = "panel9";
             // 
-            // label4
+            // labelUpdates
             // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.Name = "label4";
+            resources.ApplyResources(this.labelUpdates, "labelUpdates");
+            this.labelUpdates.ForeColor = System.Drawing.SystemColors.Control;
+            this.labelUpdates.Name = "labelUpdates";
             // 
             // panel10
             // 
-            this.panel10.Controls.Add(this.label5);
+            this.panel10.Controls.Add(this.labelSetup);
             resources.ApplyResources(this.panel10, "panel10");
             this.panel10.Name = "panel10";
             // 
-            // label5
+            // labelSetup
             // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.ForeColor = System.Drawing.SystemColors.Control;
-            this.label5.Name = "label5";
+            resources.ApplyResources(this.labelSetup, "labelSetup");
+            this.labelSetup.ForeColor = System.Drawing.SystemColors.Control;
+            this.labelSetup.Name = "labelSetup";
             // 
             // tableLayoutPanelTop
             // 
@@ -272,6 +272,15 @@
             this.flowLayoutPanelScreenConf.Controls.Add(this.buttonMinimize);
             resources.ApplyResources(this.flowLayoutPanelScreenConf, "flowLayoutPanelScreenConf");
             this.flowLayoutPanelScreenConf.Name = "flowLayoutPanelScreenConf";
+            // 
+            // pictureBoxMain
+            // 
+            resources.ApplyResources(this.pictureBoxMain, "pictureBoxMain");
+            this.pictureBoxMain.Image = global::EoraGuiDemo.Properties.Resources.facebook_page_cover_820x312;
+            this.pictureBoxMain.InitialImage = global::EoraGuiDemo.Properties.Resources.facebook_page_cover_820x312;
+            this.pictureBoxMain.Name = "pictureBoxMain";
+            this.pictureBoxMain.TabStop = false;
+            
             // 
             // buttonExit
             // 
@@ -308,20 +317,12 @@
             this.buttonMinimize.MouseLeave += new System.EventHandler(this.ButtonMinimize_MouseLeave);
             this.buttonMinimize.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ButtonMinimize_MouseMove);
             // 
-            // pictureBox1
-            // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Image = global::EoraGuiDemo.Properties.Resources.facebook_page_cover_820x312;
-            this.pictureBox1.InitialImage = global::EoraGuiDemo.Properties.Resources.facebook_page_cover_820x312;
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
-            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBoxMain);
             this.Controls.Add(this.tableLayoutPanelTop);
             this.Controls.Add(this.tableLayoutPanelBottom);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -348,7 +349,7 @@
             this.tableLayoutPanelTop.ResumeLayout(false);
             this.tableLayoutPanelTop.PerformLayout();
             this.flowLayoutPanelScreenConf.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMain)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -374,17 +375,17 @@
         private System.Windows.Forms.Button buttonExit;
         private System.Windows.Forms.Button buttonMaximize;
         private System.Windows.Forms.Button buttonMinimize;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button buttonClient;
+        private System.Windows.Forms.Button buttonNews;
+        private System.Windows.Forms.Button buttonTools;
+        private System.Windows.Forms.Button buttonUpdates;
+        private System.Windows.Forms.Button buttonSetup;
         private System.Windows.Forms.Label labelClient;
         private System.Windows.Forms.Label labelNews;
-        private System.Windows.Forms.Label label;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label labelTools;
+        private System.Windows.Forms.Label labelUpdates;
+        private System.Windows.Forms.Label labelSetup;
+        private System.Windows.Forms.PictureBox pictureBoxMain;
     }
 }
 
