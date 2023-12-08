@@ -63,11 +63,11 @@ namespace EoraGuiDemo
         {
 
         }
-        private void MenuStripMain_MouseLeave(Object sender, EventArgs e)
+        private void MenuStripMainFile_MouseLeave(Object sender, EventArgs e)
         {
             this.fileToolStripMenuItem.ForeColor = Color.White;
         }
-        private void MenuStripMain_MouseMove(Object sender, EventArgs e)
+        private void MenuStripMainFile_MouseMove(Object sender, EventArgs e)
         {
 
             this.fileToolStripMenuItem.ForeColor = Color.Black;
@@ -100,10 +100,51 @@ namespace EoraGuiDemo
         {
             this.buttonMinimize.BackColor = Color.Gray;
         }
-
-        private void buttonMinimize_MouseEnter(object sender, EventArgs e)
+        private void ButtonMinimize_MouseLeave(object sender, EventArgs e)
         {
-            this.buttonMinimize.BackColor = Color.Gray;
+            this.buttonMinimize.BackColor = Color.Black;
+        }
+        private void ButtonMaximize_MouseMove(object sender, EventArgs e)
+        {
+            this.buttonMaximize.BackColor = Color.Gray;
+        }
+        private void ButtonMaximize_MouseLeave(object sender, EventArgs e)
+        {
+            this.buttonMaximize.BackColor = Color.Black;
+        }
+        private void ButtonExit_MouseMove(object sender, EventArgs e)
+        {
+            this.buttonExit.BackColor = Color.Gray;
+        }
+        private void ButtonExit_MouseLeave(object sender, EventArgs e)
+        {
+            this.buttonExit.BackColor = Color.Black;
+        }
+        private void MenuStripMainConnect_MouseLeave(Object sender, EventArgs e)
+        {
+            this.connectToolStripMenuItem.ForeColor = Color.White;
+        }
+        private void MenuStripMainConnect_MouseMove(Object sender, EventArgs e)
+        {
+
+            this.connectToolStripMenuItem.ForeColor = Color.Black;
+        }
+        private void MenuStripMainFitting_MouseLeave(Object sender, EventArgs e)
+        {
+            this.fittingDeviceToolStripMenuItem.ForeColor = Color.White;
+        }
+        private void MenuStripMainFitting_MouseMove(Object sender, EventArgs e)
+        {
+
+            this.fittingDeviceToolStripMenuItem.ForeColor = Color.Black;
+        }
+        private void MenuStripMainHelp_MouseLeave(Object sender, EventArgs e)
+        {
+            this.helpToolStripMenuItem.ForeColor = Color.White;
+        }
+        private void MenuStripMainHelp_MouseMove(Object sender, EventArgs e)
+        {
+            this.helpToolStripMenuItem.ForeColor = Color.Black;
         }
     }
 }
