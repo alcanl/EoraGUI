@@ -53,24 +53,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\CommonEvents.cs" />
-    <Compile Include="FormPatient.cs">
+    <Compile Include="Forms\FormPatient.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormPatient.Designer.cs">
+    <Compile Include="Forms\FormPatient.Designer.cs">
       <DependentUpon>FormPatient.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormOpening.cs">
+    <Compile Include="Forms\FormOpening.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormOpening.Designer.cs">
+    <Compile Include="Forms\FormOpening.Designer.cs">
       <DependentUpon>FormOpening.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormOpening.resx">
+    <EmbeddedResource Include="Forms\FormOpening.resx">
       <DependentUpon>FormOpening.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormPatient.resx">
+    <EmbeddedResource Include="Forms\FormPatient.resx">
       <DependentUpon>FormPatient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

@@ -50,19 +50,19 @@
             this.panelMenuButton = new System.Windows.Forms.Panel();
             this.buttonMenu = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.panelHome = new System.Windows.Forms.Panel();
             this.buttonHome = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.buttonPatients = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.buttonConfiguration = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.buttonFirstFit = new System.Windows.Forms.Button();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.buttonFitting = new System.Windows.Forms.Button();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.buttonFinalization = new System.Windows.Forms.Button();
             this.sideBarTimer = new System.Windows.Forms.Timer(this.components);
+            this.panelPatient = new System.Windows.Forms.Panel();
+            this.buttonPatient = new System.Windows.Forms.Button();
+            this.panelFirstFit = new System.Windows.Forms.Panel();
+            this.buttonFirstFit = new System.Windows.Forms.Button();
+            this.panelConfiguration = new System.Windows.Forms.Panel();
+            this.buttonConfiguration = new System.Windows.Forms.Button();
+            this.panelFitting = new System.Windows.Forms.Panel();
+            this.buttonFitting = new System.Windows.Forms.Button();
+            this.panelFinalization = new System.Windows.Forms.Panel();
+            this.buttonFinalization = new System.Windows.Forms.Button();
             menuStripMain = new System.Windows.Forms.MenuStrip();
             menuStripMain.SuspendLayout();
             this.tableLayoutPanelTop.SuspendLayout();
@@ -71,12 +71,12 @@
             this.sideBarContainer.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panelMenuButton.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel7.SuspendLayout();
+            this.panelHome.SuspendLayout();
+            this.panelPatient.SuspendLayout();
+            this.panelFirstFit.SuspendLayout();
+            this.panelConfiguration.SuspendLayout();
+            this.panelFitting.SuspendLayout();
+            this.panelFinalization.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStripMain
@@ -206,12 +206,12 @@
             // 
             this.sideBarContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
             this.sideBarContainer.Controls.Add(this.panel1);
-            this.sideBarContainer.Controls.Add(this.panel2);
-            this.sideBarContainer.Controls.Add(this.panel3);
-            this.sideBarContainer.Controls.Add(this.panel4);
-            this.sideBarContainer.Controls.Add(this.panel5);
-            this.sideBarContainer.Controls.Add(this.panel6);
-            this.sideBarContainer.Controls.Add(this.panel7);
+            this.sideBarContainer.Controls.Add(this.panelHome);
+            this.sideBarContainer.Controls.Add(this.panelPatient);
+            this.sideBarContainer.Controls.Add(this.panelFirstFit);
+            this.sideBarContainer.Controls.Add(this.panelConfiguration);
+            this.sideBarContainer.Controls.Add(this.panelFitting);
+            this.sideBarContainer.Controls.Add(this.panelFinalization);
             resources.ApplyResources(this.sideBarContainer, "sideBarContainer");
             this.sideBarContainer.Name = "sideBarContainer";
             // 
@@ -236,7 +236,9 @@
             resources.ApplyResources(this.buttonMenu, "buttonMenu");
             this.buttonMenu.Name = "buttonMenu";
             this.buttonMenu.UseVisualStyleBackColor = false;
-            this.buttonMenu.Click += new System.EventHandler(this.button1_Click);
+            this.buttonMenu.Click += new System.EventHandler(this.menuButton_Click);
+            this.buttonMenu.MouseLeave += new System.EventHandler(this.panelMenuButton_MouseLeave);
+            this.buttonMenu.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelMenuButton_MouseMove);
             // 
             // label1
             // 
@@ -244,11 +246,11 @@
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
             this.label1.Name = "label1";
             // 
-            // panel2
+            // panelHome
             // 
-            this.panel2.Controls.Add(this.buttonHome);
-            resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.Name = "panel2";
+            this.panelHome.Controls.Add(this.buttonHome);
+            resources.ApplyResources(this.panelHome, "panelHome");
+            this.panelHome.Name = "panelHome";
             // 
             // buttonHome
             // 
@@ -257,37 +259,29 @@
             this.buttonHome.Name = "buttonHome";
             this.buttonHome.UseVisualStyleBackColor = true;
             // 
-            // panel3
+            // sideBarTimer
             // 
-            this.panel3.Controls.Add(this.buttonPatients);
-            resources.ApplyResources(this.panel3, "panel3");
-            this.panel3.Name = "panel3";
+            this.sideBarTimer.Interval = 10;
+            this.sideBarTimer.Tick += new System.EventHandler(this.sideBarTimer_Tick);
             // 
-            // buttonPatients
+            // panelPatient
             // 
-            resources.ApplyResources(this.buttonPatients, "buttonPatients");
-            this.buttonPatients.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonPatients.Name = "buttonPatients";
-            this.buttonPatients.UseVisualStyleBackColor = true;
+            this.panelPatient.Controls.Add(this.buttonPatient);
+            resources.ApplyResources(this.panelPatient, "panelPatient");
+            this.panelPatient.Name = "panelPatient";
             // 
-            // panel4
+            // buttonPatient
             // 
-            this.panel4.Controls.Add(this.buttonConfiguration);
-            resources.ApplyResources(this.panel4, "panel4");
-            this.panel4.Name = "panel4";
+            resources.ApplyResources(this.buttonPatient, "buttonPatient");
+            this.buttonPatient.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonPatient.Name = "buttonPatient";
+            this.buttonPatient.UseVisualStyleBackColor = true;
             // 
-            // buttonConfiguration
+            // panelFirstFit
             // 
-            resources.ApplyResources(this.buttonConfiguration, "buttonConfiguration");
-            this.buttonConfiguration.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonConfiguration.Name = "buttonConfiguration";
-            this.buttonConfiguration.UseVisualStyleBackColor = true;
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.buttonFirstFit);
-            resources.ApplyResources(this.panel5, "panel5");
-            this.panel5.Name = "panel5";
+            this.panelFirstFit.Controls.Add(this.buttonFirstFit);
+            resources.ApplyResources(this.panelFirstFit, "panelFirstFit");
+            this.panelFirstFit.Name = "panelFirstFit";
             // 
             // buttonFirstFit
             // 
@@ -296,11 +290,24 @@
             this.buttonFirstFit.Name = "buttonFirstFit";
             this.buttonFirstFit.UseVisualStyleBackColor = true;
             // 
-            // panel6
+            // panelConfiguration
             // 
-            this.panel6.Controls.Add(this.buttonFitting);
-            resources.ApplyResources(this.panel6, "panel6");
-            this.panel6.Name = "panel6";
+            this.panelConfiguration.Controls.Add(this.buttonConfiguration);
+            resources.ApplyResources(this.panelConfiguration, "panelConfiguration");
+            this.panelConfiguration.Name = "panelConfiguration";
+            // 
+            // buttonConfiguration
+            // 
+            resources.ApplyResources(this.buttonConfiguration, "buttonConfiguration");
+            this.buttonConfiguration.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonConfiguration.Name = "buttonConfiguration";
+            this.buttonConfiguration.UseVisualStyleBackColor = true;
+            // 
+            // panelFitting
+            // 
+            this.panelFitting.Controls.Add(this.buttonFitting);
+            resources.ApplyResources(this.panelFitting, "panelFitting");
+            this.panelFitting.Name = "panelFitting";
             // 
             // buttonFitting
             // 
@@ -309,11 +316,11 @@
             this.buttonFitting.Name = "buttonFitting";
             this.buttonFitting.UseVisualStyleBackColor = true;
             // 
-            // panel7
+            // panelFinalization
             // 
-            this.panel7.Controls.Add(this.buttonFinalization);
-            resources.ApplyResources(this.panel7, "panel7");
-            this.panel7.Name = "panel7";
+            this.panelFinalization.Controls.Add(this.buttonFinalization);
+            resources.ApplyResources(this.panelFinalization, "panelFinalization");
+            this.panelFinalization.Name = "panelFinalization";
             // 
             // buttonFinalization
             // 
@@ -321,11 +328,6 @@
             this.buttonFinalization.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.buttonFinalization.Name = "buttonFinalization";
             this.buttonFinalization.UseVisualStyleBackColor = true;
-            // 
-            // sideBarTimer
-            // 
-            this.sideBarTimer.Interval = 10;
-            this.sideBarTimer.Tick += new System.EventHandler(this.sideBarTimer_Tick);
             // 
             // FormPatient
             // 
@@ -347,12 +349,12 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panelMenuButton.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
+            this.panelHome.ResumeLayout(false);
+            this.panelPatient.ResumeLayout(false);
+            this.panelFirstFit.ResumeLayout(false);
+            this.panelConfiguration.ResumeLayout(false);
+            this.panelFitting.ResumeLayout(false);
+            this.panelFinalization.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -375,21 +377,21 @@
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.FlowLayoutPanel sideBarContainer;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panelHome;
         private System.Windows.Forms.Button buttonHome;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button buttonPatients;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button buttonConfiguration;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button buttonFirstFit;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Button buttonFitting;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Button buttonFinalization;
         private System.Windows.Forms.Timer sideBarTimer;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buttonMenu;
         private System.Windows.Forms.Panel panelMenuButton;
+        private System.Windows.Forms.Panel panelPatient;
+        private System.Windows.Forms.Button buttonPatient;
+        private System.Windows.Forms.Panel panelFirstFit;
+        private System.Windows.Forms.Button buttonFirstFit;
+        private System.Windows.Forms.Panel panelConfiguration;
+        private System.Windows.Forms.Button buttonConfiguration;
+        private System.Windows.Forms.Panel panelFitting;
+        private System.Windows.Forms.Button buttonFitting;
+        private System.Windows.Forms.Panel panelFinalization;
+        private System.Windows.Forms.Button buttonFinalization;
     }
 }

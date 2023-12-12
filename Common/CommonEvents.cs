@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace EoraGuiDemo.Common
@@ -33,7 +34,6 @@ namespace EoraGuiDemo.Common
                 isFullScreen = false;
             }
         }
-
         public static void ButtonMinimize_Click(Form form)
         {
             form.WindowState = FormWindowState.Minimized;
@@ -45,6 +45,37 @@ namespace EoraGuiDemo.Common
         public static void MinMaxMouseLeave_Hover(Button button)
         {
             button.BackColor = Color.Black;
+        }
+        public static void SideBarTimer_Tick(ref bool sideBarExpand, FlowLayoutPanel sideBarContainer, Timer sideBarTimer)
+        {
+            if (sideBarExpand)
+            {
+                sideBarContainer.Width -= 10;
+                if (sideBarContainer.Width == sideBarContainer.MinimumSize.Width)
+                {
+                    sideBarExpand = false;
+                    sideBarTimer.Stop();
+                }
+            }
+            else
+            {
+                sideBarContainer.Width += 10;
+                if (sideBarContainer.Width == sideBarContainer.MaximumSize.Width)
+                {
+                    sideBarExpand = true;
+                    sideBarTimer.Stop();
+                }
+            }
+        }
+        public static void PanelMenuButton_MouseMove(Button buttonMenu, Panel panelMenu)
+        {
+            buttonMenu.BackColor = Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(50)))), ((int)(((byte)(55)))));
+            panelMenu.BackColor = Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(50)))), ((int)(((byte)(55)))));
+        }
+        public static void PanelMenuButton_MouseLeave(Button buttonMenu, Panel panelMenu)
+        {
+            buttonMenu.BackColor = Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            panelMenu.BackColor = Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
         }
     }
 }

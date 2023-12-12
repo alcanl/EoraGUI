@@ -13,7 +13,7 @@ namespace EoraGuiDemo
 {
     public partial class FormPatient : Form
     {
-        private bool sideBarExpand;
+        private bool sideBarExpand = false;
         public FormPatient()
         {
             InitializeComponent();
@@ -89,46 +89,20 @@ namespace EoraGuiDemo
         }
         private void sideBarTimer_Tick(object sender, EventArgs e)
         {
-            if (sideBarExpand)
-            {
-                sideBarContainer.Width -= 10;
-                if (sideBarContainer.Width == sideBarContainer.MinimumSize.Width)
-                {
-                    sideBarExpand = false;
-                    sideBarTimer.Stop();
-                }
-            }
-            else
-            {
-                sideBarContainer.Width += 10;
-                if (sideBarContainer.Width == sideBarContainer.MaximumSize.Width)
-                {
-                    sideBarExpand = true;
-                    sideBarTimer.Stop();
-                }
-            }
+            CommonEvents.SideBarTimer_Tick(ref sideBarExpand, this.sideBarContainer, this.sideBarTimer);
         }
-
         private void menuButton_Click(object sender, EventArgs e)
         {
             sideBarTimer.Start();
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            sideBarTimer.Start();
-        }
-
         private void panelMenuButton_MouseMove(object sender, MouseEventArgs e)
         {
-            this.buttonMenu.BackColor = SystemColors.Control;
-            this.panelMenuButton.BackColor = Color.White;
+            CommonEvents.PanelMenuButton_MouseMove(this.buttonMenu, this.panelMenuButton);
         }
 
         private void panelMenuButton_MouseLeave(object sender, EventArgs e)
         {
-            this.buttonMenu.BackColor = Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
-            this.panelMenuButton.BackColor = Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            CommonEvents.PanelMenuButton_MouseLeave(this.buttonMenu, this.panelMenuButton);
         }
     }
 }
