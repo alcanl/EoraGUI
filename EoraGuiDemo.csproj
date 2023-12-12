@@ -68,6 +68,12 @@
     <Compile Include="Forms\ControlForms\UserControlPatient.Designer.cs">
       <DependentUpon>UserControlPatient.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ControlForms\UserControlTest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\ControlForms\UserControlTest.Designer.cs">
+      <DependentUpon>UserControlTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormPatient.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\ControlForms\UserControlPatient.resx">
       <DependentUpon>UserControlPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ControlForms\UserControlTest.resx">
+      <DependentUpon>UserControlTest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormOpening.resx">
       <DependentUpon>FormOpening.cs</DependentUpon>

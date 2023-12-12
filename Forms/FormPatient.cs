@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using EoraGuiDemo.Common;
+using EoraGuiDemo.Forms.ControlForms;
 
 namespace EoraGuiDemo
 {
@@ -17,6 +18,8 @@ namespace EoraGuiDemo
         public FormPatient()
         {
             InitializeComponent();
+            this.guna2ButtonPatient.PerformClick();
+            
         }
         private void MenuStripMainFile_MouseLeave(Object sender, EventArgs e)
         {
@@ -109,6 +112,10 @@ namespace EoraGuiDemo
         {
             CommonEvents.ButtonMaximize_Click(this, this.buttonMaximize);
         }
-
+        private void guna2ButtonPatient_Click(object sender, EventArgs e)
+        {
+            this.panelShadowHolder.Controls.Add(new UserControlTest());
+        }
     }
 }
+

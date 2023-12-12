@@ -184,7 +184,7 @@
     <value>tableLayoutPanelTop</value>
   </data>
   <data name="&gt;&gt;menuStripMain.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <metadata name="guna2DragControl2.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
@@ -205,7 +205,7 @@
     <value>tableLayoutPanelTop</value>
   </data>
   <data name="&gt;&gt;flowLayoutPanelScreenConf.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="tableLayoutPanelTop.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -238,7 +238,7 @@
     <value>4</value>
   </data>
   <data name="tableLayoutPanelTop.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="menuStripMain" Row="-1" RowSpan="1" Column="-1" ColumnSpan="1" /&gt;&lt;Control Name="flowLayoutPanelScreenConf" Row="-1" RowSpan="1" Column="-1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,5,Percent,49,5" /&gt;&lt;Rows Styles="Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="flowLayoutPanelScreenConf" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="menuStripMain" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,5,Percent,49,5" /&gt;&lt;Rows Styles="Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="&gt;&gt;buttonExit.Name" xml:space="preserve">
     <value>buttonExit</value>
@@ -277,7 +277,7 @@
     <value>2</value>
   </data>
   <data name="flowLayoutPanelScreenConf.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+    <value>Right</value>
   </data>
   <data name="flowLayoutPanelScreenConf.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
     <value>RightToLeft</value>
@@ -304,7 +304,7 @@
     <value>tableLayoutPanelTop</value>
   </data>
   <data name="&gt;&gt;flowLayoutPanelScreenConf.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="buttonExit.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -681,6 +681,9 @@
   <data name="labelUpdate.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt</value>
   </data>
+  <data name="labelUpdate.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="labelUpdate.Location" type="System.Drawing.Point, System.Drawing">
     <value>126, 5</value>
   </data>
@@ -979,6 +982,9 @@
         sQAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="buttonMenu.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="buttonMenu.Location" type="System.Drawing.Point, System.Drawing">
     <value>-10, -9</value>
   </data>
@@ -1005,6 +1011,9 @@
   </data>
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 15.75pt</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>90, 41</value>
@@ -1390,7 +1399,7 @@
   <data name="buttonFitting.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vwAADr8BOAVTJAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAJSSURBVFhH3ZdP
+        vAAADrwBlbxySQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAJSSURBVFhH3ZdP
         S1VRFMWfzhyU47TvERKoEwMNqSZFfY2yPkFKhE51Xl+kJJoG9g9qEIEOJRHsD9Txt/beh+f13gsP2m9Q
         P1j47tprsDj3Xu85g7OUUrbQN7QcVi9kptHb0HTYnTC/h16ho8hvoKkYD8HcR2I7rF7IzHvUmA+7BbNN
         j7R4g5olMA5sVMpOWL2QWfSosRh2A/yr6I8lSvmCtMIv7cpZj6iDkV1ASy1O0KXwJlAtsWfBCkZ2gec+
@@ -1716,41 +1725,17 @@
   <data name="&gt;&gt;guna2ButtonPatient.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="guna2ShadowPanelMain.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="guna2ShadowPanelMain.Location" type="System.Drawing.Point, System.Drawing">
-    <value>59, 0</value>
-  </data>
-  <data name="guna2ShadowPanelMain.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="guna2ShadowPanelMain.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1029, 586</value>
-  </data>
-  <data name="guna2ShadowPanelMain.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1029, 586</value>
-  </data>
-  <data name="guna2ShadowPanelMain.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;guna2ShadowPanelMain.Name" xml:space="preserve">
-    <value>guna2ShadowPanelMain</value>
-  </data>
-  <data name="&gt;&gt;guna2ShadowPanelMain.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2ShadowPanel, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;guna2ShadowPanelMain.Parent" xml:space="preserve">
-    <value>panelShadowHolder</value>
-  </data>
-  <data name="&gt;&gt;guna2ShadowPanelMain.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="panelShadowHolder.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
   <data name="panelShadowHolder.Location" type="System.Drawing.Point, System.Drawing">
     <value>94, 143</value>
+  </data>
+  <data name="panelShadowHolder.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="panelShadowHolder.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1142, 610</value>
   </data>
   <data name="panelShadowHolder.Size" type="System.Drawing.Size, System.Drawing">
     <value>1142, 610</value>

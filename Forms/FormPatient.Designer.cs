@@ -74,7 +74,6 @@
             this.guna2ButtonAudiogram = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ButtonPatient = new Guna.UI2.WinForms.Guna2Button();
             this.panelShadowHolder = new System.Windows.Forms.Panel();
-            this.guna2ShadowPanelMain = new Guna.UI2.WinForms.Guna2ShadowPanel();
             menuStripMain = new System.Windows.Forms.MenuStrip();
             guna2DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             menuStripMain.SuspendLayout();
@@ -95,7 +94,6 @@
             this.panelFitting.SuspendLayout();
             this.panelFinalization.SuspendLayout();
             this.guna2PanelTabs.SuspendLayout();
-            this.panelShadowHolder.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStripMain
@@ -151,8 +149,8 @@
             // 
             this.tableLayoutPanelTop.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             resources.ApplyResources(this.tableLayoutPanelTop, "tableLayoutPanelTop");
-            this.tableLayoutPanelTop.Controls.Add(menuStripMain);
-            this.tableLayoutPanelTop.Controls.Add(this.flowLayoutPanelScreenConf);
+            this.tableLayoutPanelTop.Controls.Add(this.flowLayoutPanelScreenConf, 1, 0);
+            this.tableLayoutPanelTop.Controls.Add(menuStripMain, 0, 0);
             this.tableLayoutPanelTop.Name = "tableLayoutPanelTop";
             // 
             // flowLayoutPanelScreenConf
@@ -473,20 +471,12 @@
             this.guna2ButtonPatient.Name = "guna2ButtonPatient";
             this.guna2ButtonPatient.ShadowDecoration.Color = System.Drawing.Color.DimGray;
             this.guna2ButtonPatient.UseTransparentBackground = true;
+            this.guna2ButtonPatient.Click += new System.EventHandler(this.guna2ButtonPatient_Click);
             // 
             // panelShadowHolder
             // 
-            this.panelShadowHolder.Controls.Add(this.guna2ShadowPanelMain);
             resources.ApplyResources(this.panelShadowHolder, "panelShadowHolder");
             this.panelShadowHolder.Name = "panelShadowHolder";
-            // 
-            // guna2ShadowPanelMain
-            // 
-            resources.ApplyResources(this.guna2ShadowPanelMain, "guna2ShadowPanelMain");
-            this.guna2ShadowPanelMain.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanelMain.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanelMain.Name = "guna2ShadowPanelMain";
-            this.guna2ShadowPanelMain.ShadowColor = System.Drawing.Color.Black;
             // 
             // FormPatient
             // 
@@ -526,7 +516,6 @@
             this.panelFitting.ResumeLayout(false);
             this.panelFinalization.ResumeLayout(false);
             this.guna2PanelTabs.ResumeLayout(false);
-            this.panelShadowHolder.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -575,6 +564,5 @@
         private System.Windows.Forms.Label labelSession;
         private System.Windows.Forms.Timer sideBarTimer;
         private System.Windows.Forms.Panel panelShadowHolder;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanelMain;
     }
 }
