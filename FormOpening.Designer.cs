@@ -57,10 +57,10 @@
             this.labelSetup = new System.Windows.Forms.Label();
             this.tableLayoutPanelTop = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanelScreenConf = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBoxMain = new System.Windows.Forms.PictureBox();
             this.buttonExit = new System.Windows.Forms.Button();
             this.buttonMaximize = new System.Windows.Forms.Button();
             this.buttonMinimize = new System.Windows.Forms.Button();
+            this.pictureBoxMain = new System.Windows.Forms.PictureBox();
             menuStripMain = new System.Windows.Forms.MenuStrip();
             menuStripMain.SuspendLayout();
             this.tableLayoutPanelBottom.SuspendLayout();
@@ -273,15 +273,6 @@
             resources.ApplyResources(this.flowLayoutPanelScreenConf, "flowLayoutPanelScreenConf");
             this.flowLayoutPanelScreenConf.Name = "flowLayoutPanelScreenConf";
             // 
-            // pictureBoxMain
-            // 
-            resources.ApplyResources(this.pictureBoxMain, "pictureBoxMain");
-            this.pictureBoxMain.Image = global::EoraGuiDemo.Properties.Resources.facebook_page_cover_820x312;
-            this.pictureBoxMain.InitialImage = global::EoraGuiDemo.Properties.Resources.facebook_page_cover_820x312;
-            this.pictureBoxMain.Name = "pictureBoxMain";
-            this.pictureBoxMain.TabStop = false;
-            
-            // 
             // buttonExit
             // 
             this.buttonExit.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -316,6 +307,15 @@
             this.buttonMinimize.Click += new System.EventHandler(this.ButtonMinimize_Click);
             this.buttonMinimize.MouseLeave += new System.EventHandler(this.ButtonMinimize_MouseLeave);
             this.buttonMinimize.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ButtonMinimize_MouseMove);
+            // 
+            // pictureBoxMain
+            // 
+            resources.ApplyResources(this.pictureBoxMain, "pictureBoxMain");
+            this.pictureBoxMain.Image = global::EoraGuiDemo.Properties.Resources.facebook_page_cover_820x312;
+            this.pictureBoxMain.InitialImage = global::EoraGuiDemo.Properties.Resources.facebook_page_cover_820x312;
+            this.pictureBoxMain.Name = "pictureBoxMain";
+            this.pictureBoxMain.TabStop = false;
+            this.pictureBoxMain.Click += new System.EventHandler(this.pictureBoxMain_Click);
             // 
             // MainForm
             // 

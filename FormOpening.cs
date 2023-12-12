@@ -90,5 +90,11 @@ namespace EoraGuiDemo
         {
             CommonEvents.ToolStripMenu_MouseMove(this.helpToolStripMenuItem);
         }
+
+        private void pictureBoxMain_Click(object sender, EventArgs e)
+        {
+
+
+        }
     }
 }
