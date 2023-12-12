@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.MenuStrip menuStripMain;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPatient));
+            Guna.UI2.WinForms.Guna2DragControl guna2DragControl2;
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.connectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fittingDeviceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -42,9 +43,13 @@
             this.buttonMinimize = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.labelUser = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.labelPatient = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.labelUpdate = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.labelSession = new System.Windows.Forms.Label();
             this.sideBarContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelMenuButton = new System.Windows.Forms.Panel();
@@ -52,7 +57,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panelHome = new System.Windows.Forms.Panel();
             this.buttonHome = new System.Windows.Forms.Button();
-            this.sideBarTimer = new System.Windows.Forms.Timer(this.components);
             this.panelPatient = new System.Windows.Forms.Panel();
             this.buttonPatient = new System.Windows.Forms.Button();
             this.panelFirstFit = new System.Windows.Forms.Panel();
@@ -63,11 +67,24 @@
             this.buttonFitting = new System.Windows.Forms.Button();
             this.panelFinalization = new System.Windows.Forms.Panel();
             this.buttonFinalization = new System.Windows.Forms.Button();
+            this.sideBarTimer = new System.Windows.Forms.Timer(this.components);
+            this.guna2PanelTabs = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2ButtonREUG = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2ButtonRECD = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2ButtonAudiogram = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2ButtonPatient = new Guna.UI2.WinForms.Guna2Button();
+            this.panelShadowHolder = new System.Windows.Forms.Panel();
+            this.guna2ShadowPanelMain = new Guna.UI2.WinForms.Guna2ShadowPanel();
             menuStripMain = new System.Windows.Forms.MenuStrip();
+            guna2DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             menuStripMain.SuspendLayout();
             this.tableLayoutPanelTop.SuspendLayout();
             this.flowLayoutPanelScreenConf.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
+            this.panel11.SuspendLayout();
+            this.panel10.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.panel8.SuspendLayout();
             this.sideBarContainer.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panelMenuButton.SuspendLayout();
@@ -77,6 +94,8 @@
             this.panelConfiguration.SuspendLayout();
             this.panelFitting.SuspendLayout();
             this.panelFinalization.SuspendLayout();
+            this.guna2PanelTabs.SuspendLayout();
+            this.panelShadowHolder.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStripMain
@@ -121,12 +140,19 @@
             this.helpToolStripMenuItem.MouseLeave += new System.EventHandler(this.MenuStripMainHelp_MouseLeave);
             this.helpToolStripMenuItem.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MenuStripMainHelp_MouseMove);
             // 
+            // guna2DragControl2
+            // 
+            guna2DragControl2.DockForm = true;
+            guna2DragControl2.DockIndicatorTransparencyValue = 0.6D;
+            guna2DragControl2.TargetControl = menuStripMain;
+            guna2DragControl2.UseTransparentDrag = true;
+            // 
             // tableLayoutPanelTop
             // 
             this.tableLayoutPanelTop.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             resources.ApplyResources(this.tableLayoutPanelTop, "tableLayoutPanelTop");
-            this.tableLayoutPanelTop.Controls.Add(menuStripMain, 0, 0);
-            this.tableLayoutPanelTop.Controls.Add(this.flowLayoutPanelScreenConf, 1, 0);
+            this.tableLayoutPanelTop.Controls.Add(menuStripMain);
+            this.tableLayoutPanelTop.Controls.Add(this.flowLayoutPanelScreenConf);
             this.tableLayoutPanelTop.Name = "tableLayoutPanelTop";
             // 
             // flowLayoutPanelScreenConf
@@ -136,6 +162,7 @@
             this.flowLayoutPanelScreenConf.Controls.Add(this.buttonMinimize);
             resources.ApplyResources(this.flowLayoutPanelScreenConf, "flowLayoutPanelScreenConf");
             this.flowLayoutPanelScreenConf.Name = "flowLayoutPanelScreenConf";
+            this.flowLayoutPanelScreenConf.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.flowLayoutPanelScreenConf_MouseDoubleClick);
             // 
             // buttonExit
             // 
@@ -184,23 +211,51 @@
             // 
             // panel11
             // 
+            this.panel11.Controls.Add(this.labelUser);
             resources.ApplyResources(this.panel11, "panel11");
             this.panel11.Name = "panel11";
             // 
+            // labelUser
+            // 
+            resources.ApplyResources(this.labelUser, "labelUser");
+            this.labelUser.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelUser.Name = "labelUser";
+            // 
             // panel10
             // 
+            this.panel10.Controls.Add(this.labelPatient);
             resources.ApplyResources(this.panel10, "panel10");
             this.panel10.Name = "panel10";
             // 
+            // labelPatient
+            // 
+            resources.ApplyResources(this.labelPatient, "labelPatient");
+            this.labelPatient.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelPatient.Name = "labelPatient";
+            // 
             // panel9
             // 
+            this.panel9.Controls.Add(this.labelUpdate);
             resources.ApplyResources(this.panel9, "panel9");
             this.panel9.Name = "panel9";
             // 
+            // labelUpdate
+            // 
+            resources.ApplyResources(this.labelUpdate, "labelUpdate");
+            this.labelUpdate.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelUpdate.Name = "labelUpdate";
+            // 
             // panel8
             // 
+            this.panel8.Controls.Add(this.labelSession);
             resources.ApplyResources(this.panel8, "panel8");
             this.panel8.Name = "panel8";
+            // 
+            // labelSession
+            // 
+            resources.ApplyResources(this.labelSession, "labelSession");
+            this.labelSession.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelSession.Name = "labelSession";
             // 
             // sideBarContainer
             // 
@@ -233,6 +288,7 @@
             // buttonMenu
             // 
             this.buttonMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.buttonMenu.Cursor = System.Windows.Forms.Cursors.Hand;
             resources.ApplyResources(this.buttonMenu, "buttonMenu");
             this.buttonMenu.Name = "buttonMenu";
             this.buttonMenu.UseVisualStyleBackColor = false;
@@ -254,15 +310,11 @@
             // 
             // buttonHome
             // 
+            this.buttonHome.Cursor = System.Windows.Forms.Cursors.Hand;
             resources.ApplyResources(this.buttonHome, "buttonHome");
             this.buttonHome.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.buttonHome.Name = "buttonHome";
             this.buttonHome.UseVisualStyleBackColor = true;
-            // 
-            // sideBarTimer
-            // 
-            this.sideBarTimer.Interval = 10;
-            this.sideBarTimer.Tick += new System.EventHandler(this.sideBarTimer_Tick);
             // 
             // panelPatient
             // 
@@ -272,6 +324,7 @@
             // 
             // buttonPatient
             // 
+            this.buttonPatient.Cursor = System.Windows.Forms.Cursors.Hand;
             resources.ApplyResources(this.buttonPatient, "buttonPatient");
             this.buttonPatient.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.buttonPatient.Name = "buttonPatient";
@@ -285,6 +338,7 @@
             // 
             // buttonFirstFit
             // 
+            this.buttonFirstFit.Cursor = System.Windows.Forms.Cursors.Hand;
             resources.ApplyResources(this.buttonFirstFit, "buttonFirstFit");
             this.buttonFirstFit.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.buttonFirstFit.Name = "buttonFirstFit";
@@ -298,6 +352,7 @@
             // 
             // buttonConfiguration
             // 
+            this.buttonConfiguration.Cursor = System.Windows.Forms.Cursors.Hand;
             resources.ApplyResources(this.buttonConfiguration, "buttonConfiguration");
             this.buttonConfiguration.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.buttonConfiguration.Name = "buttonConfiguration";
@@ -311,6 +366,7 @@
             // 
             // buttonFitting
             // 
+            this.buttonFitting.Cursor = System.Windows.Forms.Cursors.Hand;
             resources.ApplyResources(this.buttonFitting, "buttonFitting");
             this.buttonFitting.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.buttonFitting.Name = "buttonFitting";
@@ -324,15 +380,121 @@
             // 
             // buttonFinalization
             // 
+            this.buttonFinalization.Cursor = System.Windows.Forms.Cursors.Hand;
             resources.ApplyResources(this.buttonFinalization, "buttonFinalization");
             this.buttonFinalization.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.buttonFinalization.Name = "buttonFinalization";
             this.buttonFinalization.UseVisualStyleBackColor = true;
             // 
+            // sideBarTimer
+            // 
+            this.sideBarTimer.Interval = 5;
+            this.sideBarTimer.Tick += new System.EventHandler(this.sideBarTimer_Tick);
+            // 
+            // guna2PanelTabs
+            // 
+            this.guna2PanelTabs.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PanelTabs.Controls.Add(this.guna2ButtonREUG);
+            this.guna2PanelTabs.Controls.Add(this.guna2ButtonRECD);
+            this.guna2PanelTabs.Controls.Add(this.guna2ButtonAudiogram);
+            this.guna2PanelTabs.Controls.Add(this.guna2ButtonPatient);
+            resources.ApplyResources(this.guna2PanelTabs, "guna2PanelTabs");
+            this.guna2PanelTabs.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.guna2PanelTabs.Name = "guna2PanelTabs";
+            // 
+            // guna2ButtonREUG
+            // 
+            resources.ApplyResources(this.guna2ButtonREUG, "guna2ButtonREUG");
+            this.guna2ButtonREUG.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ButtonREUG.BorderRadius = 5;
+            this.guna2ButtonREUG.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.guna2ButtonREUG.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.guna2ButtonREUG.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.guna2ButtonREUG.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2ButtonREUG.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2ButtonREUG.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2ButtonREUG.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2ButtonREUG.FillColor = System.Drawing.Color.Transparent;
+            this.guna2ButtonREUG.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.guna2ButtonREUG.Name = "guna2ButtonREUG";
+            this.guna2ButtonREUG.ShadowDecoration.Color = System.Drawing.Color.DimGray;
+            this.guna2ButtonREUG.UseTransparentBackground = true;
+            // 
+            // guna2ButtonRECD
+            // 
+            resources.ApplyResources(this.guna2ButtonRECD, "guna2ButtonRECD");
+            this.guna2ButtonRECD.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ButtonRECD.BorderRadius = 5;
+            this.guna2ButtonRECD.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.guna2ButtonRECD.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.guna2ButtonRECD.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.guna2ButtonRECD.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2ButtonRECD.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2ButtonRECD.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2ButtonRECD.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2ButtonRECD.FillColor = System.Drawing.Color.Transparent;
+            this.guna2ButtonRECD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.guna2ButtonRECD.Name = "guna2ButtonRECD";
+            this.guna2ButtonRECD.ShadowDecoration.Color = System.Drawing.Color.DimGray;
+            this.guna2ButtonRECD.UseTransparentBackground = true;
+            // 
+            // guna2ButtonAudiogram
+            // 
+            resources.ApplyResources(this.guna2ButtonAudiogram, "guna2ButtonAudiogram");
+            this.guna2ButtonAudiogram.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ButtonAudiogram.BorderRadius = 5;
+            this.guna2ButtonAudiogram.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.guna2ButtonAudiogram.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.guna2ButtonAudiogram.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.guna2ButtonAudiogram.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2ButtonAudiogram.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2ButtonAudiogram.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2ButtonAudiogram.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2ButtonAudiogram.FillColor = System.Drawing.Color.Transparent;
+            this.guna2ButtonAudiogram.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.guna2ButtonAudiogram.Name = "guna2ButtonAudiogram";
+            this.guna2ButtonAudiogram.ShadowDecoration.Color = System.Drawing.Color.DimGray;
+            this.guna2ButtonAudiogram.UseTransparentBackground = true;
+            // 
+            // guna2ButtonPatient
+            // 
+            resources.ApplyResources(this.guna2ButtonPatient, "guna2ButtonPatient");
+            this.guna2ButtonPatient.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ButtonPatient.BorderRadius = 5;
+            this.guna2ButtonPatient.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.guna2ButtonPatient.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.guna2ButtonPatient.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.guna2ButtonPatient.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2ButtonPatient.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2ButtonPatient.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2ButtonPatient.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2ButtonPatient.FillColor = System.Drawing.Color.Transparent;
+            this.guna2ButtonPatient.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.guna2ButtonPatient.Name = "guna2ButtonPatient";
+            this.guna2ButtonPatient.ShadowDecoration.Color = System.Drawing.Color.DimGray;
+            this.guna2ButtonPatient.UseTransparentBackground = true;
+            // 
+            // panelShadowHolder
+            // 
+            this.panelShadowHolder.Controls.Add(this.guna2ShadowPanelMain);
+            resources.ApplyResources(this.panelShadowHolder, "panelShadowHolder");
+            this.panelShadowHolder.Name = "panelShadowHolder";
+            // 
+            // guna2ShadowPanelMain
+            // 
+            resources.ApplyResources(this.guna2ShadowPanelMain, "guna2ShadowPanelMain");
+            this.guna2ShadowPanelMain.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanelMain.FillColor = System.Drawing.Color.White;
+            this.guna2ShadowPanelMain.Name = "guna2ShadowPanelMain";
+            this.guna2ShadowPanelMain.ShadowColor = System.Drawing.Color.Black;
+            // 
             // FormPatient
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Controls.Add(this.panelShadowHolder);
+            this.Controls.Add(this.guna2PanelTabs);
             this.Controls.Add(this.sideBarContainer);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanelTop);
@@ -345,6 +507,14 @@
             this.tableLayoutPanelTop.PerformLayout();
             this.flowLayoutPanelScreenConf.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
             this.sideBarContainer.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -355,6 +525,8 @@
             this.panelConfiguration.ResumeLayout(false);
             this.panelFitting.ResumeLayout(false);
             this.panelFinalization.ResumeLayout(false);
+            this.guna2PanelTabs.ResumeLayout(false);
+            this.panelShadowHolder.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -379,7 +551,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panelHome;
         private System.Windows.Forms.Button buttonHome;
-        private System.Windows.Forms.Timer sideBarTimer;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buttonMenu;
         private System.Windows.Forms.Panel panelMenuButton;
@@ -393,5 +564,17 @@
         private System.Windows.Forms.Button buttonFitting;
         private System.Windows.Forms.Panel panelFinalization;
         private System.Windows.Forms.Button buttonFinalization;
+        private Guna.UI2.WinForms.Guna2Panel guna2PanelTabs;
+        private Guna.UI2.WinForms.Guna2Button guna2ButtonPatient;
+        private Guna.UI2.WinForms.Guna2Button guna2ButtonREUG;
+        private Guna.UI2.WinForms.Guna2Button guna2ButtonRECD;
+        private Guna.UI2.WinForms.Guna2Button guna2ButtonAudiogram;
+        private System.Windows.Forms.Label labelUser;
+        private System.Windows.Forms.Label labelPatient;
+        private System.Windows.Forms.Label labelUpdate;
+        private System.Windows.Forms.Label labelSession;
+        private System.Windows.Forms.Timer sideBarTimer;
+        private System.Windows.Forms.Panel panelShadowHolder;
+        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanelMain;
     }
 }

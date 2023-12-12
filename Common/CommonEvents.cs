@@ -51,6 +51,7 @@ namespace EoraGuiDemo.Common
             if (sideBarExpand)
             {
                 sideBarContainer.Width -= 10;
+
                 if (sideBarContainer.Width == sideBarContainer.MinimumSize.Width)
                 {
                     sideBarExpand = false;

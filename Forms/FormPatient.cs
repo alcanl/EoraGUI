@@ -104,5 +104,11 @@ namespace EoraGuiDemo
         {
             CommonEvents.PanelMenuButton_MouseLeave(this.buttonMenu, this.panelMenuButton);
         }
+
+        private void flowLayoutPanelScreenConf_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            CommonEvents.ButtonMaximize_Click(this, this.buttonMaximize);
+        }
+
     }
 }
