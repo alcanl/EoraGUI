@@ -57,10 +57,11 @@
             this.labelSetup = new System.Windows.Forms.Label();
             this.tableLayoutPanelTop = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanelScreenConf = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBoxMain = new System.Windows.Forms.PictureBox();
             this.buttonExit = new System.Windows.Forms.Button();
             this.buttonMaximize = new System.Windows.Forms.Button();
             this.buttonMinimize = new System.Windows.Forms.Button();
+            this.pictureBoxMain = new System.Windows.Forms.PictureBox();
+            this.LanguaeComboBox = new System.Windows.Forms.ComboBox();
             menuStripMain = new System.Windows.Forms.MenuStrip();
             menuStripMain.SuspendLayout();
             this.tableLayoutPanelBottom.SuspendLayout();
@@ -81,8 +82,8 @@
             // 
             // menuStripMain
             // 
-            menuStripMain.BackColor = System.Drawing.Color.Black;
             resources.ApplyResources(menuStripMain, "menuStripMain");
+            menuStripMain.BackColor = System.Drawing.Color.Black;
             menuStripMain.ForeColor = System.Drawing.Color.White;
             menuStripMain.GripMargin = new System.Windows.Forms.Padding(6);
             menuStripMain.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -95,36 +96,36 @@
             // 
             // fileToolStripMenuItem
             // 
-            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             resources.ApplyResources(this.fileToolStripMenuItem, "fileToolStripMenuItem");
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.MouseLeave += new System.EventHandler(this.MenuStripMainFile_MouseLeave);
             this.fileToolStripMenuItem.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MenuStripMainFile_MouseMove);
             // 
             // connectToolStripMenuItem
             // 
-            this.connectToolStripMenuItem.Name = "connectToolStripMenuItem";
             resources.ApplyResources(this.connectToolStripMenuItem, "connectToolStripMenuItem");
+            this.connectToolStripMenuItem.Name = "connectToolStripMenuItem";
             this.connectToolStripMenuItem.MouseLeave += new System.EventHandler(this.MenuStripMainConnect_MouseLeave);
             this.connectToolStripMenuItem.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MenuStripMainConnect_MouseMove);
             // 
             // fittingDeviceToolStripMenuItem
             // 
-            this.fittingDeviceToolStripMenuItem.Name = "fittingDeviceToolStripMenuItem";
             resources.ApplyResources(this.fittingDeviceToolStripMenuItem, "fittingDeviceToolStripMenuItem");
+            this.fittingDeviceToolStripMenuItem.Name = "fittingDeviceToolStripMenuItem";
             this.fittingDeviceToolStripMenuItem.MouseLeave += new System.EventHandler(this.MenuStripMainFitting_MouseLeave);
             this.fittingDeviceToolStripMenuItem.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MenuStripMainFitting_MouseMove);
             // 
             // helpToolStripMenuItem
             // 
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             resources.ApplyResources(this.helpToolStripMenuItem, "helpToolStripMenuItem");
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.MouseLeave += new System.EventHandler(this.MenuStripMainHelp_MouseLeave);
             this.helpToolStripMenuItem.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MenuStripMainHelp_MouseMove);
             // 
             // tableLayoutPanelBottom
             // 
-            this.tableLayoutPanelBottom.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             resources.ApplyResources(this.tableLayoutPanelBottom, "tableLayoutPanelBottom");
+            this.tableLayoutPanelBottom.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tableLayoutPanelBottom.Controls.Add(this.panel1, 0, 0);
             this.tableLayoutPanelBottom.Controls.Add(this.panel2, 1, 0);
             this.tableLayoutPanelBottom.Controls.Add(this.panel3, 2, 0);
@@ -139,8 +140,8 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.buttonClient);
             resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Controls.Add(this.buttonClient);
             this.panel1.Name = "panel1";
             // 
             // buttonClient
@@ -151,8 +152,8 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.buttonNews);
             resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.Controls.Add(this.buttonNews);
             this.panel2.Name = "panel2";
             // 
             // buttonNews
@@ -163,8 +164,8 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.buttonTools);
             resources.ApplyResources(this.panel3, "panel3");
+            this.panel3.Controls.Add(this.buttonTools);
             this.panel3.Name = "panel3";
             // 
             // buttonTools
@@ -175,8 +176,8 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.buttonUpdates);
             resources.ApplyResources(this.panel4, "panel4");
+            this.panel4.Controls.Add(this.buttonUpdates);
             this.panel4.Name = "panel4";
             // 
             // buttonUpdates
@@ -187,8 +188,8 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.buttonSetup);
             resources.ApplyResources(this.panel5, "panel5");
+            this.panel5.Controls.Add(this.buttonSetup);
             this.panel5.Name = "panel5";
             // 
             // buttonSetup
@@ -199,8 +200,8 @@
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.labelClient);
             resources.ApplyResources(this.panel6, "panel6");
+            this.panel6.Controls.Add(this.labelClient);
             this.panel6.Name = "panel6";
             // 
             // labelClient
@@ -211,8 +212,8 @@
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.labelNews);
             resources.ApplyResources(this.panel7, "panel7");
+            this.panel7.Controls.Add(this.labelNews);
             this.panel7.Name = "panel7";
             // 
             // labelNews
@@ -223,8 +224,8 @@
             // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.labelTools);
             resources.ApplyResources(this.panel8, "panel8");
+            this.panel8.Controls.Add(this.labelTools);
             this.panel8.Name = "panel8";
             // 
             // labelTools
@@ -235,8 +236,8 @@
             // 
             // panel9
             // 
-            this.panel9.Controls.Add(this.labelUpdates);
             resources.ApplyResources(this.panel9, "panel9");
+            this.panel9.Controls.Add(this.labelUpdates);
             this.panel9.Name = "panel9";
             // 
             // labelUpdates
@@ -247,8 +248,8 @@
             // 
             // panel10
             // 
-            this.panel10.Controls.Add(this.labelSetup);
             resources.ApplyResources(this.panel10, "panel10");
+            this.panel10.Controls.Add(this.labelSetup);
             this.panel10.Name = "panel10";
             // 
             // labelSetup
@@ -259,33 +260,24 @@
             // 
             // tableLayoutPanelTop
             // 
-            this.tableLayoutPanelTop.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             resources.ApplyResources(this.tableLayoutPanelTop, "tableLayoutPanelTop");
+            this.tableLayoutPanelTop.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tableLayoutPanelTop.Controls.Add(menuStripMain, 0, 0);
             this.tableLayoutPanelTop.Controls.Add(this.flowLayoutPanelScreenConf, 1, 0);
             this.tableLayoutPanelTop.Name = "tableLayoutPanelTop";
             // 
             // flowLayoutPanelScreenConf
             // 
+            resources.ApplyResources(this.flowLayoutPanelScreenConf, "flowLayoutPanelScreenConf");
             this.flowLayoutPanelScreenConf.Controls.Add(this.buttonExit);
             this.flowLayoutPanelScreenConf.Controls.Add(this.buttonMaximize);
             this.flowLayoutPanelScreenConf.Controls.Add(this.buttonMinimize);
-            resources.ApplyResources(this.flowLayoutPanelScreenConf, "flowLayoutPanelScreenConf");
             this.flowLayoutPanelScreenConf.Name = "flowLayoutPanelScreenConf";
-            // 
-            // pictureBoxMain
-            // 
-            resources.ApplyResources(this.pictureBoxMain, "pictureBoxMain");
-            this.pictureBoxMain.Image = global::EoraGuiDemo.Properties.Resources.facebook_page_cover_820x312;
-            this.pictureBoxMain.InitialImage = global::EoraGuiDemo.Properties.Resources.facebook_page_cover_820x312;
-            this.pictureBoxMain.Name = "pictureBoxMain";
-            this.pictureBoxMain.TabStop = false;
-            
             // 
             // buttonExit
             // 
-            this.buttonExit.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             resources.ApplyResources(this.buttonExit, "buttonExit");
+            this.buttonExit.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.buttonExit.Image = global::EoraGuiDemo.Properties.Resources.exit_icon;
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.UseVisualStyleBackColor = false;
@@ -295,8 +287,8 @@
             // 
             // buttonMaximize
             // 
-            this.buttonMaximize.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             resources.ApplyResources(this.buttonMaximize, "buttonMaximize");
+            this.buttonMaximize.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.buttonMaximize.Image = global::EoraGuiDemo.Properties.Resources.setFullScreen;
             this.buttonMaximize.Name = "buttonMaximize";
             this.buttonMaximize.UseVisualStyleBackColor = false;
@@ -306,9 +298,9 @@
             // 
             // buttonMinimize
             // 
+            resources.ApplyResources(this.buttonMinimize, "buttonMinimize");
             this.buttonMinimize.BackColor = System.Drawing.Color.Black;
             this.buttonMinimize.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.buttonMinimize, "buttonMinimize");
             this.buttonMinimize.ForeColor = System.Drawing.Color.Black;
             this.buttonMinimize.Image = global::EoraGuiDemo.Properties.Resources.window_minimize__1_;
             this.buttonMinimize.Name = "buttonMinimize";
@@ -317,11 +309,35 @@
             this.buttonMinimize.MouseLeave += new System.EventHandler(this.ButtonMinimize_MouseLeave);
             this.buttonMinimize.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ButtonMinimize_MouseMove);
             // 
+            // pictureBoxMain
+            // 
+            resources.ApplyResources(this.pictureBoxMain, "pictureBoxMain");
+            this.pictureBoxMain.Image = global::EoraGuiDemo.Properties.Resources.facebook_page_cover_820x312;
+            this.pictureBoxMain.InitialImage = global::EoraGuiDemo.Properties.Resources.facebook_page_cover_820x312;
+            this.pictureBoxMain.Name = "pictureBoxMain";
+            this.pictureBoxMain.TabStop = false;
+            // 
+            // LanguaeComboBox
+            // 
+            resources.ApplyResources(this.LanguaeComboBox, "LanguaeComboBox");
+            this.LanguaeComboBox.DisplayMember = "English";
+            this.LanguaeComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.LanguaeComboBox.FormattingEnabled = true;
+            this.LanguaeComboBox.Items.AddRange(new object[] {
+            resources.GetString("LanguaeComboBox.Items"),
+            resources.GetString("LanguaeComboBox.Items1"),
+            resources.GetString("LanguaeComboBox.Items2")});
+            this.LanguaeComboBox.Name = "LanguaeComboBox";
+            this.LanguaeComboBox.Tag = "";
+            this.LanguaeComboBox.SelectedIndexChanged += new System.EventHandler(this.LanguaeComboBox_SelectedIndexChanged_1);
+            this.LanguaeComboBox.SelectionChangeCommitted += new System.EventHandler(this.LanguaeComboBox_SelectionChangeCommitted);
+            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Controls.Add(this.LanguaeComboBox);
             this.Controls.Add(this.pictureBoxMain);
             this.Controls.Add(this.tableLayoutPanelTop);
             this.Controls.Add(this.tableLayoutPanelBottom);
@@ -386,6 +402,7 @@
         private System.Windows.Forms.Label labelUpdates;
         private System.Windows.Forms.Label labelSetup;
         private System.Windows.Forms.PictureBox pictureBoxMain;
+        private System.Windows.Forms.ComboBox LanguaeComboBox;
     }
 }
 

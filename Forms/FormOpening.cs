@@ -7,6 +7,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -89,6 +90,47 @@ namespace EoraGuiDemo
         private void MenuStripMainHelp_MouseMove(Object sender, EventArgs e)
         {
             CommonEvents.ToolStripMenu_MouseMove(this.helpToolStripMenuItem);
+        }
+
+        private void ButtonExit_MouseMove(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void ButtonMaximize_MouseMove(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void ButtonMinimize_MouseMove(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void LanguaeComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LanguaeComboBox_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void LanguaeComboBox_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            switch (LanguaeComboBox.SelectedIndex)
+            {
+                case 0:
+                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
+                    break; 
+                case 1:
+                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("tr-Tr");
+                    break;
+            }
+            this.Controls.Clear();
+            InitializeComponent();
+
         }
     }
 }
