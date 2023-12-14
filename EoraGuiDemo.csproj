@@ -97,11 +97,11 @@
     <Compile Include="Forms\FormPatient.Designer.cs">
       <DependentUpon>FormPatient.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormOpening.cs">
+    <Compile Include="Forms\FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormOpening.Designer.cs">
-      <DependentUpon>FormOpening.cs</DependentUpon>
+    <Compile Include="Forms\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\AudiogramData.cs" />
     <Compile Include="Interfaces\IPatient.cs" />
@@ -114,11 +114,11 @@
     <EmbeddedResource Include="Forms\ControlForms\UserControlPatient.resx">
       <DependentUpon>UserControlPatient.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormOpening.resx">
-      <DependentUpon>FormOpening.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormOpening.tr.resx">
-      <DependentUpon>FormOpening.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FormMain.tr.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormPatient.resx">
       <DependentUpon>FormPatient.cs</DependentUpon>

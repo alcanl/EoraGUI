@@ -1415,19 +1415,19 @@
   </data>
   <data name="buttonFitting.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
-        AAACUklEQVRYR92XT0tVURTFn84clOO07xESqBMDDakmRX2Nsj5BSoROdV5fpCSaBvYPahCBDiUR7A/U
-        8bf23ofn9d4LD9pvUD9Y+O7aa7A4917vOYOzlFK20De0HFYvZKbR29B02J0wv4deoaPIb6CpGA/B3Edi
-        O6xeyMx71JgPuwWzTY+0eIOaJTAObFTKTli9kFn0qLEYdgP8q+iPJUr5grTCL+3KWY+og5FdQEstTtCl
-        8CZQLbFnwQpGdoHnPi6fwjK41kqIo7AcjOwCj3xst2E1vMvoq0zYtWAFI7vALDq0hJf4jn7ZlXM7og5G
-        agHB7DqqJSq/0UZEhmCmFxDMZ9BrS5ZyjK7EqAmDsRQQZHY8Wg7CaqOhZ/6NAiseNVbC7oVMTgFmk+gh
-        +qlgoN9raDJiLZilFajvdhdrEWvB7O8L4F9EPyxRynt0A91EH2SA3vMLEW+An1JgwcfGUtjyr7llLITd
-        AD+lwNknv69A56cZP+0WaJmFll3Lfwt9lAHjvQWCmZ72Ph5ErAWztAJ6DVXi/Gt4H43/NayQWfaoMcoe
-        Mr3Af/YtYDCH9KkU+nTOxKgT5nkFMJ+iunutaBPR+5FhllMA4677hrZLepdrGZWYjWgD/LQCOrEI7dtt
-        2fm7imqJzg8MfloBHZfEZlgG15/dLs/CaoCfVuCd++UFmghPu1kdJsRjC54DP61APb0InVh0aKj7du1e
-        5yLaAD+twBTSQbGLJxFrwWykw2mFzLZHy35YQzBVYh3tIT0Tu+hOjDthPvLxXJDRv24d/bfCgsHgFDiz
-        S+rIGAVdAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wgAADsIBFShKgAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAJSSURBVFhH3ZdP
+        S1VRFMWfzhyU47TvERKoEwMNqSZFfY2yPkFKhE51Xl+kJJoG9g9qEIEOJRHsD9Txt/beh+f13gsP2m9Q
+        P1j47tprsDj3Xu85g7OUUrbQN7QcVi9kptHb0HTYnTC/h16ho8hvoKkYD8HcR2I7rF7IzHvUmA+7BbNN
+        j7R4g5olMA5sVMpOWL2QWfSosRh2A/yr6I8lSvmCtMIv7cpZj6iDkV1ASy1O0KXwJlAtsWfBCkZ2gec+
+        Lp/CMrjWSoijsByM7AKPfGy3YTW8y+irTNi1YAUju8AsOrSEl/iOftmVczuiDkZqAcHsOqolKr/RRkSG
+        YKYXEMxn0GtLlnKMrsSoCYOxFBBkdjxaDsJqo6Fn/o0CKx41VsLuhUxOAWaT6CH6qWCg32toMmItmKUV
+        qO92F2sRa8Hs7wvgX0Q/LFHKe3QD3UQfZIDe8wsRb4CfUmDBx8ZS2PKvuWUshN0AP6XA2Se/r0Dnpxk/
+        7RZomYWWXct/C32UAeO9BYKZnvY+HkSsBbO0AnoNVeL8a3gfjf81rJBZ9qgxyh4yvcB/9i1gMIf0qRT6
+        dM7EqBPmeQUwn6K6e61oE9H7kWGWUwDjrvuGtkt6l2sZlZiNaAP8tAI6sQjt223Z+buKaonODwx+WgEd
+        l8RmWAbXn90uz8JqgJ9W4J375QWaCE+7WR0mxGMLngM/rUA9vQidWHRoqPt27V7nItoAP63AFNJBsYsn
+        EWvBbKTDaYXMtkfLflhDMFViHe0hPRO76E6MO2E+8vFckNG/bh39t8KCweAUOLNL6sgYBV0AAAAASUVO
+        RK5CYII=
 </value>
   </data>
   <data name="buttonFitting.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
@@ -1547,7 +1547,7 @@
     <value>160, 17</value>
   </metadata>
   <data name="guna2ButtonREUG.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left</value>
+    <value>Left</value>
   </data>
   <data name="guna2ButtonREUG.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -1580,7 +1580,7 @@
     <value>0</value>
   </data>
   <data name="guna2ButtonRECD.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left</value>
+    <value>Left</value>
   </data>
   <data name="guna2ButtonRECD.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -1613,7 +1613,7 @@
     <value>1</value>
   </data>
   <data name="guna2ButtonAudiogram.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left</value>
+    <value>Left</value>
   </data>
   <data name="guna2ButtonAudiogram.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -1646,7 +1646,7 @@
     <value>2</value>
   </data>
   <data name="guna2ButtonPatient.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left</value>
+    <value>Left</value>
   </data>
   <data name="guna2ButtonPatient.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 14.25pt, style=Bold</value>

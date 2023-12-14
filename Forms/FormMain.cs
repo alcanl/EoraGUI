@@ -9,16 +9,20 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Forms;
 
 namespace EoraGuiDemo
 {
     public partial class MainForm : Form
     {
-        bool isFullScreen = false;
+        private bool isFullScreen = false;
+        private Form PatientForm;
         public MainForm()
         {
             InitializeComponent();
+            PatientForm = new FormPatient();
+            
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -92,32 +96,6 @@ namespace EoraGuiDemo
         {
             CommonEvents.ToolStripMenu_MouseMove(this.helpToolStripMenuItem);
         }
-
-        private void ButtonExit_MouseMove(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void ButtonMaximize_MouseMove(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void ButtonMinimize_MouseMove(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void LanguaeComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LanguaeComboBox_SelectionChangeCommitted(object sender, EventArgs e)
-        {
-            
-        }
-
         private void LanguaeComboBox_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             switch (LanguaeComboBox.SelectedIndex)
@@ -132,6 +110,19 @@ namespace EoraGuiDemo
             this.Controls.Clear();
             InitializeComponent();
 
+        }
+
+        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            if (isFullScreen)
+            {
+                PatientForm.Size = this.Size;
+              //
+            }
+
+            PatientForm.Show();
         }
     }
 }

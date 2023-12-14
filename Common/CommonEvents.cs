@@ -16,7 +16,12 @@ namespace EoraGuiDemo.Common
         }
         public static void ButtonExit_Click(Form form)
         {
-            form.Close();
+            var answer = MessageBox.Show("Are you sure to close the application?", "Warning",
+                MessageBoxButtons.YesNo);
+
+            if (answer.ToString().ToUpper() == "YES")
+                Application.Exit();
+                
         }
         public static void ButtonMaximize_Click(Form form, Button buttonMaximize, ref bool isFullScreen)
         {

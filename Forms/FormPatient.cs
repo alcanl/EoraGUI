@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Forms;
 using EoraGuiDemo.Common;
 using EoraGuiDemo.Forms.ControlForms;
@@ -15,7 +16,7 @@ namespace EoraGuiDemo
     public partial class FormPatient : Form
     {
         private bool sideBarExpand = false;
-        private bool isFullScreen = false;
+        private bool _isFullScreen;
         private readonly Control userControlPatient;
         private readonly Control userControlAudiogram;
         public FormPatient()
@@ -35,7 +36,7 @@ namespace EoraGuiDemo
         }
         private void ButtonMaximize_Click(object sender, EventArgs e)
         {
-            CommonEvents.ButtonMaximize_Click(this, this.buttonMaximize, ref isFullScreen);
+            CommonEvents.ButtonMaximize_Click(this, this.buttonMaximize, ref _isFullScreen);
         }
         private void ButtonMinimize_Click(object sender, EventArgs e)
         {
@@ -112,7 +113,7 @@ namespace EoraGuiDemo
         }
         private void flowLayoutPanelScreenConf_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            CommonEvents.ButtonMaximize_Click(this, this.buttonMaximize, ref isFullScreen);
+            CommonEvents.ButtonMaximize_Click(this, this.buttonMaximize, ref _isFullScreen);
         }
         private void guna2ButtonPatient_Click(object sender, EventArgs e)
         {
@@ -122,6 +123,8 @@ namespace EoraGuiDemo
         {
             CommonEvents.AddControlToPanel(this.panelShadowHolder, userControlAudiogram);
         }
+        public void SetIsFullScreen(bool isFullScreen)
+        { _isFullScreen = isFullScreen; }
     }
 }
     
