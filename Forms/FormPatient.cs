@@ -15,11 +15,15 @@ namespace EoraGuiDemo
     public partial class FormPatient : Form
     {
         private bool sideBarExpand = false;
+        private bool isFullScreen = false;
+        private readonly Control userControlPatient;
+        private readonly Control userControlAudiogram;
         public FormPatient()
         {
             InitializeComponent();
+            userControlPatient = new UserControlPatient();
+            userControlAudiogram = new UserControlAudiogram();
             this.guna2ButtonPatient.PerformClick();
-            
         }
         private void MenuStripMainFile_MouseLeave(Object sender, EventArgs e)
         {
@@ -31,7 +35,7 @@ namespace EoraGuiDemo
         }
         private void ButtonMaximize_Click(object sender, EventArgs e)
         {
-            CommonEvents.ButtonMaximize_Click(this, this.buttonMaximize);
+            CommonEvents.ButtonMaximize_Click(this, this.buttonMaximize, ref isFullScreen);
         }
         private void ButtonMinimize_Click(object sender, EventArgs e)
         {
@@ -85,7 +89,6 @@ namespace EoraGuiDemo
         {
             CommonEvents.ToolStripMenu_MouseMove(this.helpToolStripMenuItem);
         }
-
         private void fileToolStripMenuItem_MouseMove(object sender, MouseEventArgs e)
         {
             CommonEvents.ToolStripMenu_MouseMove(this.fileToolStripMenuItem);
@@ -107,15 +110,18 @@ namespace EoraGuiDemo
         {
             CommonEvents.PanelMenuButton_MouseLeave(this.buttonMenu, this.panelMenuButton);
         }
-
         private void flowLayoutPanelScreenConf_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            CommonEvents.ButtonMaximize_Click(this, this.buttonMaximize);
+            CommonEvents.ButtonMaximize_Click(this, this.buttonMaximize, ref isFullScreen);
         }
         private void guna2ButtonPatient_Click(object sender, EventArgs e)
         {
-            this.panelShadowHolder.Controls.Add(new UserControlTest());
+            CommonEvents.AddControlToPanel(this.panelShadowHolder, userControlPatient);
+        }
+        private void guna2ButtonAudiogram_Click(object sender, EventArgs e)
+        {
+            CommonEvents.AddControlToPanel(this.panelShadowHolder, userControlAudiogram);
         }
     }
 }
-
+    

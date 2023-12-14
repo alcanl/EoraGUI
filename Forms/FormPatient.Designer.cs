@@ -60,13 +60,13 @@
             this.panelPatient = new System.Windows.Forms.Panel();
             this.buttonPatient = new System.Windows.Forms.Button();
             this.panelFirstFit = new System.Windows.Forms.Panel();
-            this.buttonFirstFit = new System.Windows.Forms.Button();
+            this.buttonDeviceSelect = new System.Windows.Forms.Button();
             this.panelConfiguration = new System.Windows.Forms.Panel();
             this.buttonConfiguration = new System.Windows.Forms.Button();
             this.panelFitting = new System.Windows.Forms.Panel();
             this.buttonFitting = new System.Windows.Forms.Button();
             this.panelFinalization = new System.Windows.Forms.Panel();
-            this.buttonFinalization = new System.Windows.Forms.Button();
+            this.buttonSettings = new System.Windows.Forms.Button();
             this.sideBarTimer = new System.Windows.Forms.Timer(this.components);
             this.guna2PanelTabs = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2ButtonREUG = new Guna.UI2.WinForms.Guna2Button();
@@ -330,17 +330,17 @@
             // 
             // panelFirstFit
             // 
-            this.panelFirstFit.Controls.Add(this.buttonFirstFit);
+            this.panelFirstFit.Controls.Add(this.buttonDeviceSelect);
             resources.ApplyResources(this.panelFirstFit, "panelFirstFit");
             this.panelFirstFit.Name = "panelFirstFit";
             // 
-            // buttonFirstFit
+            // buttonDeviceSelect
             // 
-            this.buttonFirstFit.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.buttonFirstFit, "buttonFirstFit");
-            this.buttonFirstFit.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonFirstFit.Name = "buttonFirstFit";
-            this.buttonFirstFit.UseVisualStyleBackColor = true;
+            this.buttonDeviceSelect.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.buttonDeviceSelect, "buttonDeviceSelect");
+            this.buttonDeviceSelect.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonDeviceSelect.Name = "buttonDeviceSelect";
+            this.buttonDeviceSelect.UseVisualStyleBackColor = true;
             // 
             // panelConfiguration
             // 
@@ -372,17 +372,17 @@
             // 
             // panelFinalization
             // 
-            this.panelFinalization.Controls.Add(this.buttonFinalization);
+            this.panelFinalization.Controls.Add(this.buttonSettings);
             resources.ApplyResources(this.panelFinalization, "panelFinalization");
             this.panelFinalization.Name = "panelFinalization";
             // 
-            // buttonFinalization
+            // buttonSettings
             // 
-            this.buttonFinalization.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.buttonFinalization, "buttonFinalization");
-            this.buttonFinalization.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonFinalization.Name = "buttonFinalization";
-            this.buttonFinalization.UseVisualStyleBackColor = true;
+            this.buttonSettings.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.buttonSettings, "buttonSettings");
+            this.buttonSettings.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonSettings.Name = "buttonSettings";
+            this.buttonSettings.UseVisualStyleBackColor = true;
             // 
             // sideBarTimer
             // 
@@ -453,6 +453,7 @@
             this.guna2ButtonAudiogram.Name = "guna2ButtonAudiogram";
             this.guna2ButtonAudiogram.ShadowDecoration.Color = System.Drawing.Color.DimGray;
             this.guna2ButtonAudiogram.UseTransparentBackground = true;
+            this.guna2ButtonAudiogram.Click += new System.EventHandler(this.guna2ButtonAudiogram_Click);
             // 
             // guna2ButtonPatient
             // 
@@ -546,13 +547,13 @@
         private System.Windows.Forms.Panel panelPatient;
         private System.Windows.Forms.Button buttonPatient;
         private System.Windows.Forms.Panel panelFirstFit;
-        private System.Windows.Forms.Button buttonFirstFit;
+        private System.Windows.Forms.Button buttonDeviceSelect;
         private System.Windows.Forms.Panel panelConfiguration;
         private System.Windows.Forms.Button buttonConfiguration;
         private System.Windows.Forms.Panel panelFitting;
         private System.Windows.Forms.Button buttonFitting;
         private System.Windows.Forms.Panel panelFinalization;
-        private System.Windows.Forms.Button buttonFinalization;
+        private System.Windows.Forms.Button buttonSettings;
         private Guna.UI2.WinForms.Guna2Panel guna2PanelTabs;
         private Guna.UI2.WinForms.Guna2Button guna2ButtonPatient;
         private Guna.UI2.WinForms.Guna2Button guna2ButtonREUG;
@@ -562,7 +563,7 @@
         private System.Windows.Forms.Label labelPatient;
         private System.Windows.Forms.Label labelUpdate;
         private System.Windows.Forms.Label labelSession;
-        private System.Windows.Forms.Timer sideBarTimer;
         private System.Windows.Forms.Panel panelShadowHolder;
+        private System.Windows.Forms.Timer sideBarTimer;
     }
 }

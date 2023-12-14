@@ -6,7 +6,6 @@ namespace EoraGuiDemo.Common
 {
     public class CommonEvents
     {
-        public static bool isFullScreen = false;
         public static void ToolStripMenu_MouseLeave(ToolStripMenuItem toolStripMenuItem)
         {
             toolStripMenuItem.ForeColor = Color.White;
@@ -19,7 +18,7 @@ namespace EoraGuiDemo.Common
         {
             form.Close();
         }
-        public static void ButtonMaximize_Click(Form form, Button buttonMaximize)
+        public static void ButtonMaximize_Click(Form form, Button buttonMaximize, ref bool isFullScreen)
         {
             if (!isFullScreen)
             {
@@ -50,7 +49,7 @@ namespace EoraGuiDemo.Common
         {
             if (sideBarExpand)
             {
-                sideBarContainer.Width -= 10;
+                sideBarContainer.Width -= 30;
 
                 if (sideBarContainer.Width == sideBarContainer.MinimumSize.Width)
                 {
@@ -60,7 +59,8 @@ namespace EoraGuiDemo.Common
             }
             else
             {
-                sideBarContainer.Width += 10;
+                    sideBarContainer.Width += 25;
+
                 if (sideBarContainer.Width == sideBarContainer.MaximumSize.Width)
                 {
                     sideBarExpand = true;
@@ -77,6 +77,10 @@ namespace EoraGuiDemo.Common
         {
             buttonMenu.BackColor = Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
             panelMenu.BackColor = Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+        }
+        public static void AddControlToPanel(Panel panel, Control control) 
+        { 
+            panel.Controls.Add(control);
         }
     }
 }

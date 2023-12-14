@@ -10,11 +10,15 @@ using System.Windows.Forms;
 
 namespace EoraGuiDemo.Forms.ControlForms
 {
-    public partial class UserControlTest : UserControl
+    public partial class UserControlAudiogram : UserControl
     {
-        public UserControlTest()
+        public UserControlAudiogram()
         {
             InitializeComponent();
+        }
+
+        private void UserControlAudiogram_Load(object sender, EventArgs e)
+        {
             this.Dock = DockStyle.Fill;
         }
     }
