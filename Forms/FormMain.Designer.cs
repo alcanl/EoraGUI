@@ -598,7 +598,6 @@
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelScreenConf;
         private System.Windows.Forms.Button buttonExit;
-        private System.Windows.Forms.Button buttonMaximize;
         private System.Windows.Forms.Button buttonMinimize;
         private System.Windows.Forms.Label labelClient;
         private System.Windows.Forms.Label labelNews;
@@ -613,6 +612,7 @@
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton3;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton4;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton5;
+        public System.Windows.Forms.Button buttonMaximize;
     }
 }
 

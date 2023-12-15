@@ -16,8 +16,8 @@ namespace EoraGuiDemo
 {
     public partial class MainForm : Form
     {
-        private bool isFullScreen = false;
-        private Form PatientForm;
+        public bool isFullScreen = false;
+        private FormPatient PatientForm { get;}
         public MainForm()
         {
             InitializeComponent();
@@ -38,7 +38,7 @@ namespace EoraGuiDemo
         }
         private void ButtonExit_Click(object sender, EventArgs e)
         {
-            CommonEvents.ButtonExit_Click(this);
+            CommonEvents.ButtonExit_Click();
         }
         private void ButtonMaximize_Click(object sender, EventArgs e)
         {
@@ -118,8 +118,7 @@ namespace EoraGuiDemo
 
             if (isFullScreen)
             {
-                PatientForm.Size = this.Size;
-              //
+                CommonEvents.ButtonMaximize_Click(PatientForm, PatientForm.buttonMaximize, ref PatientForm.isFullScreen);               
             }
 
             PatientForm.Show();

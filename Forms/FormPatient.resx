@@ -780,120 +780,6 @@
   <data name="&gt;&gt;labelSession.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>sideBarContainer</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panelHome.Name" xml:space="preserve">
-    <value>panelHome</value>
-  </data>
-  <data name="&gt;&gt;panelHome.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelHome.Parent" xml:space="preserve">
-    <value>sideBarContainer</value>
-  </data>
-  <data name="&gt;&gt;panelHome.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;panelPatient.Name" xml:space="preserve">
-    <value>panelPatient</value>
-  </data>
-  <data name="&gt;&gt;panelPatient.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelPatient.Parent" xml:space="preserve">
-    <value>sideBarContainer</value>
-  </data>
-  <data name="&gt;&gt;panelPatient.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;panelFirstFit.Name" xml:space="preserve">
-    <value>panelFirstFit</value>
-  </data>
-  <data name="&gt;&gt;panelFirstFit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelFirstFit.Parent" xml:space="preserve">
-    <value>sideBarContainer</value>
-  </data>
-  <data name="&gt;&gt;panelFirstFit.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;panelConfiguration.Name" xml:space="preserve">
-    <value>panelConfiguration</value>
-  </data>
-  <data name="&gt;&gt;panelConfiguration.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelConfiguration.Parent" xml:space="preserve">
-    <value>sideBarContainer</value>
-  </data>
-  <data name="&gt;&gt;panelConfiguration.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;panelFitting.Name" xml:space="preserve">
-    <value>panelFitting</value>
-  </data>
-  <data name="&gt;&gt;panelFitting.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelFitting.Parent" xml:space="preserve">
-    <value>sideBarContainer</value>
-  </data>
-  <data name="&gt;&gt;panelFitting.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;panelFinalization.Name" xml:space="preserve">
-    <value>panelFinalization</value>
-  </data>
-  <data name="&gt;&gt;panelFinalization.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelFinalization.Parent" xml:space="preserve">
-    <value>sideBarContainer</value>
-  </data>
-  <data name="&gt;&gt;panelFinalization.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="sideBarContainer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="sideBarContainer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 31</value>
-  </data>
-  <data name="sideBarContainer.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>307, 0</value>
-  </data>
-  <data name="sideBarContainer.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>94, 0</value>
-  </data>
-  <data name="sideBarContainer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 722</value>
-  </data>
-  <data name="sideBarContainer.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;sideBarContainer.Name" xml:space="preserve">
-    <value>sideBarContainer</value>
-  </data>
-  <data name="&gt;&gt;sideBarContainer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;sideBarContainer.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;sideBarContainer.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="&gt;&gt;panelMenuButton.Name" xml:space="preserve">
     <value>panelMenuButton</value>
   </data>
@@ -938,6 +824,267 @@
   </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="buttonHome.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="buttonHome.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 14.25pt</value>
+  </data>
+  <data name="buttonHome.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1
+        MAAA6mAAADqYAAAXcJy6UTwAAAAHdElNRQfnDAwFKxLLsZ3pAAABS0lEQVRYR+2WQUoDQRBFx0Ai5gZ6
+        OUEQjyEE0Y0u9A6iS3XhWVSyNCYoCLoQd+Or6SpE255MprszCj740HT9rv8hhKRoQ1mWA3SAHlT7cqfj
+        vEgQukDfuUarassDAaFwI18JFs8LN9KXYGHTcCNdCRYtGm7El2BB23CjfQkexoYbi5fgQapwo3kJjKnD
+        jfklMOQKN8IlGOQON/wSXCwr3PgswUHCr+R2yVyigRSQX7Wu2JMCM3fuhIkUmLpzJ9xLAfkz0RXVR9BH
+        IzRG7yg3knGHdlG/+iYYXJyg3BxrnA/DP1XgDT2r5NyUJAW2UU+fybse2pFBA6ILvKj9C9yvoNfKUU90
+        gUe1ezB7cpZa/gv87gJHzlNLbIFDtfsw3HKeWmILbKrdh+EQ3Va2MDEFbtCa2n8GwwY6Q6Fl52r1YBb6
+        Wye7TtG6WpWi+ACBAML7O0CG3wAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonHome.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonHome.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-222, -11</value>
+  </data>
+  <data name="buttonHome.Size" type="System.Drawing.Size, System.Drawing">
+    <value>537, 84</value>
+  </data>
+  <data name="buttonHome.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="buttonHome.Text" xml:space="preserve">
+    <value>                            Home</value>
+  </data>
+  <data name="&gt;&gt;buttonHome.Name" xml:space="preserve">
+    <value>buttonHome</value>
+  </data>
+  <data name="&gt;&gt;buttonHome.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonHome.Parent" xml:space="preserve">
+    <value>panelHome</value>
+  </data>
+  <data name="&gt;&gt;buttonHome.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panelHome.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 121</value>
+  </data>
+  <data name="panelHome.Size" type="System.Drawing.Size, System.Drawing">
+    <value>304, 65</value>
+  </data>
+  <data name="panelHome.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panelHome.Name" xml:space="preserve">
+    <value>panelHome</value>
+  </data>
+  <data name="&gt;&gt;panelHome.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelHome.Parent" xml:space="preserve">
+    <value>sideBarContainer</value>
+  </data>
+  <data name="&gt;&gt;panelHome.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;buttonPatient.Name" xml:space="preserve">
+    <value>buttonPatient</value>
+  </data>
+  <data name="&gt;&gt;buttonPatient.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonPatient.Parent" xml:space="preserve">
+    <value>panelPatient</value>
+  </data>
+  <data name="&gt;&gt;buttonPatient.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panelPatient.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 192</value>
+  </data>
+  <data name="panelPatient.Size" type="System.Drawing.Size, System.Drawing">
+    <value>304, 65</value>
+  </data>
+  <data name="panelPatient.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;panelPatient.Name" xml:space="preserve">
+    <value>panelPatient</value>
+  </data>
+  <data name="&gt;&gt;panelPatient.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelPatient.Parent" xml:space="preserve">
+    <value>sideBarContainer</value>
+  </data>
+  <data name="&gt;&gt;panelPatient.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;buttonDeviceSelect.Name" xml:space="preserve">
+    <value>buttonDeviceSelect</value>
+  </data>
+  <data name="&gt;&gt;buttonDeviceSelect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonDeviceSelect.Parent" xml:space="preserve">
+    <value>panelFirstFit</value>
+  </data>
+  <data name="&gt;&gt;buttonDeviceSelect.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panelFirstFit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 263</value>
+  </data>
+  <data name="panelFirstFit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>304, 65</value>
+  </data>
+  <data name="panelFirstFit.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;panelFirstFit.Name" xml:space="preserve">
+    <value>panelFirstFit</value>
+  </data>
+  <data name="&gt;&gt;panelFirstFit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelFirstFit.Parent" xml:space="preserve">
+    <value>sideBarContainer</value>
+  </data>
+  <data name="&gt;&gt;panelFirstFit.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;buttonConfiguration.Name" xml:space="preserve">
+    <value>buttonConfiguration</value>
+  </data>
+  <data name="&gt;&gt;buttonConfiguration.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonConfiguration.Parent" xml:space="preserve">
+    <value>panelConfiguration</value>
+  </data>
+  <data name="&gt;&gt;buttonConfiguration.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panelConfiguration.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 334</value>
+  </data>
+  <data name="panelConfiguration.Size" type="System.Drawing.Size, System.Drawing">
+    <value>304, 65</value>
+  </data>
+  <data name="panelConfiguration.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;panelConfiguration.Name" xml:space="preserve">
+    <value>panelConfiguration</value>
+  </data>
+  <data name="&gt;&gt;panelConfiguration.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelConfiguration.Parent" xml:space="preserve">
+    <value>sideBarContainer</value>
+  </data>
+  <data name="&gt;&gt;panelConfiguration.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;buttonFitting.Name" xml:space="preserve">
+    <value>buttonFitting</value>
+  </data>
+  <data name="&gt;&gt;buttonFitting.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonFitting.Parent" xml:space="preserve">
+    <value>panelFitting</value>
+  </data>
+  <data name="&gt;&gt;buttonFitting.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panelFitting.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 405</value>
+  </data>
+  <data name="panelFitting.Size" type="System.Drawing.Size, System.Drawing">
+    <value>304, 65</value>
+  </data>
+  <data name="panelFitting.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;panelFitting.Name" xml:space="preserve">
+    <value>panelFitting</value>
+  </data>
+  <data name="&gt;&gt;panelFitting.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelFitting.Parent" xml:space="preserve">
+    <value>sideBarContainer</value>
+  </data>
+  <data name="&gt;&gt;panelFitting.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;buttonSettings.Name" xml:space="preserve">
+    <value>buttonSettings</value>
+  </data>
+  <data name="&gt;&gt;buttonSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonSettings.Parent" xml:space="preserve">
+    <value>panelFinalization</value>
+  </data>
+  <data name="&gt;&gt;buttonSettings.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panelFinalization.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 476</value>
+  </data>
+  <data name="panelFinalization.Size" type="System.Drawing.Size, System.Drawing">
+    <value>304, 65</value>
+  </data>
+  <data name="panelFinalization.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;panelFinalization.Name" xml:space="preserve">
+    <value>panelFinalization</value>
+  </data>
+  <data name="&gt;&gt;panelFinalization.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelFinalization.Parent" xml:space="preserve">
+    <value>sideBarContainer</value>
+  </data>
+  <data name="&gt;&gt;panelFinalization.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="sideBarContainer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="sideBarContainer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 31</value>
+  </data>
+  <data name="sideBarContainer.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>307, 0</value>
+  </data>
+  <data name="sideBarContainer.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>94, 0</value>
+  </data>
+  <data name="sideBarContainer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 722</value>
+  </data>
+  <data name="sideBarContainer.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;sideBarContainer.Name" xml:space="preserve">
+    <value>sideBarContainer</value>
+  </data>
+  <data name="&gt;&gt;sideBarContainer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sideBarContainer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;sideBarContainer.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;buttonMenu.Name" xml:space="preserve">
     <value>buttonMenu</value>
@@ -1039,117 +1186,6 @@
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;buttonHome.Name" xml:space="preserve">
-    <value>buttonHome</value>
-  </data>
-  <data name="&gt;&gt;buttonHome.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonHome.Parent" xml:space="preserve">
-    <value>panelHome</value>
-  </data>
-  <data name="&gt;&gt;buttonHome.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panelHome.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 121</value>
-  </data>
-  <data name="panelHome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>304, 65</value>
-  </data>
-  <data name="panelHome.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;panelHome.Name" xml:space="preserve">
-    <value>panelHome</value>
-  </data>
-  <data name="&gt;&gt;panelHome.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelHome.Parent" xml:space="preserve">
-    <value>sideBarContainer</value>
-  </data>
-  <data name="&gt;&gt;panelHome.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="buttonHome.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="buttonHome.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 14.25pt</value>
-  </data>
-  <data name="buttonHome.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1
-        MAAA6mAAADqYAAAXcJy6UTwAAAAHdElNRQfnDAwFKxLLsZ3pAAABS0lEQVRYR+2WQUoDQRBFx0Ai5gZ6
-        OUEQjyEE0Y0u9A6iS3XhWVSyNCYoCLoQd+Or6SpE255MprszCj740HT9rv8hhKRoQ1mWA3SAHlT7cqfj
-        vEgQukDfuUarassDAaFwI18JFs8LN9KXYGHTcCNdCRYtGm7El2BB23CjfQkexoYbi5fgQapwo3kJjKnD
-        jfklMOQKN8IlGOQON/wSXCwr3PgswUHCr+R2yVyigRSQX7Wu2JMCM3fuhIkUmLpzJ9xLAfkz0RXVR9BH
-        IzRG7yg3knGHdlG/+iYYXJyg3BxrnA/DP1XgDT2r5NyUJAW2UU+fybse2pFBA6ILvKj9C9yvoNfKUU90
-        gUe1ezB7cpZa/gv87gJHzlNLbIFDtfsw3HKeWmILbKrdh+EQ3Va2MDEFbtCa2n8GwwY6Q6Fl52r1YBb6
-        Wye7TtG6WpWi+ACBAML7O0CG3wAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="buttonHome.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="buttonHome.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-222, -11</value>
-  </data>
-  <data name="buttonHome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>537, 84</value>
-  </data>
-  <data name="buttonHome.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="buttonHome.Text" xml:space="preserve">
-    <value>                            Home</value>
-  </data>
-  <data name="&gt;&gt;buttonHome.Name" xml:space="preserve">
-    <value>buttonHome</value>
-  </data>
-  <data name="&gt;&gt;buttonHome.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonHome.Parent" xml:space="preserve">
-    <value>panelHome</value>
-  </data>
-  <data name="&gt;&gt;buttonHome.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;buttonPatient.Name" xml:space="preserve">
-    <value>buttonPatient</value>
-  </data>
-  <data name="&gt;&gt;buttonPatient.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonPatient.Parent" xml:space="preserve">
-    <value>panelPatient</value>
-  </data>
-  <data name="&gt;&gt;buttonPatient.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panelPatient.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 192</value>
-  </data>
-  <data name="panelPatient.Size" type="System.Drawing.Size, System.Drawing">
-    <value>304, 65</value>
-  </data>
-  <data name="panelPatient.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;panelPatient.Name" xml:space="preserve">
-    <value>panelPatient</value>
-  </data>
-  <data name="&gt;&gt;panelPatient.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelPatient.Parent" xml:space="preserve">
-    <value>sideBarContainer</value>
-  </data>
-  <data name="&gt;&gt;panelPatient.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="buttonPatient.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
@@ -1196,39 +1232,6 @@
   </data>
   <data name="&gt;&gt;buttonPatient.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="&gt;&gt;buttonDeviceSelect.Name" xml:space="preserve">
-    <value>buttonDeviceSelect</value>
-  </data>
-  <data name="&gt;&gt;buttonDeviceSelect.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonDeviceSelect.Parent" xml:space="preserve">
-    <value>panelFirstFit</value>
-  </data>
-  <data name="&gt;&gt;buttonDeviceSelect.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panelFirstFit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 263</value>
-  </data>
-  <data name="panelFirstFit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>304, 65</value>
-  </data>
-  <data name="panelFirstFit.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;panelFirstFit.Name" xml:space="preserve">
-    <value>panelFirstFit</value>
-  </data>
-  <data name="&gt;&gt;panelFirstFit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelFirstFit.Parent" xml:space="preserve">
-    <value>sideBarContainer</value>
-  </data>
-  <data name="&gt;&gt;panelFirstFit.ZOrder" xml:space="preserve">
-    <value>3</value>
   </data>
   <data name="buttonDeviceSelect.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1289,39 +1292,6 @@
   <data name="&gt;&gt;buttonDeviceSelect.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;buttonConfiguration.Name" xml:space="preserve">
-    <value>buttonConfiguration</value>
-  </data>
-  <data name="&gt;&gt;buttonConfiguration.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonConfiguration.Parent" xml:space="preserve">
-    <value>panelConfiguration</value>
-  </data>
-  <data name="&gt;&gt;buttonConfiguration.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panelConfiguration.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 334</value>
-  </data>
-  <data name="panelConfiguration.Size" type="System.Drawing.Size, System.Drawing">
-    <value>304, 65</value>
-  </data>
-  <data name="panelConfiguration.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;panelConfiguration.Name" xml:space="preserve">
-    <value>panelConfiguration</value>
-  </data>
-  <data name="&gt;&gt;panelConfiguration.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelConfiguration.Parent" xml:space="preserve">
-    <value>sideBarContainer</value>
-  </data>
-  <data name="&gt;&gt;panelConfiguration.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
   <data name="buttonConfiguration.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
@@ -1374,39 +1344,6 @@
   <data name="&gt;&gt;buttonConfiguration.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;buttonFitting.Name" xml:space="preserve">
-    <value>buttonFitting</value>
-  </data>
-  <data name="&gt;&gt;buttonFitting.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonFitting.Parent" xml:space="preserve">
-    <value>panelFitting</value>
-  </data>
-  <data name="&gt;&gt;buttonFitting.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panelFitting.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 405</value>
-  </data>
-  <data name="panelFitting.Size" type="System.Drawing.Size, System.Drawing">
-    <value>304, 65</value>
-  </data>
-  <data name="panelFitting.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;panelFitting.Name" xml:space="preserve">
-    <value>panelFitting</value>
-  </data>
-  <data name="&gt;&gt;panelFitting.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelFitting.Parent" xml:space="preserve">
-    <value>sideBarContainer</value>
-  </data>
-  <data name="&gt;&gt;panelFitting.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
   <data name="buttonFitting.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
@@ -1416,7 +1353,7 @@
   <data name="buttonFitting.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAJSSURBVFhH3ZdP
+        wQAADsEBuJFr7QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAJSSURBVFhH3ZdP
         S1VRFMWfzhyU47TvERKoEwMNqSZFfY2yPkFKhE51Xl+kJJoG9g9qEIEOJRHsD9Txt/beh+f13gsP2m9Q
         P1j47tprsDj3Xu85g7OUUrbQN7QcVi9kptHb0HTYnTC/h16ho8hvoKkYD8HcR2I7rF7IzHvUmA+7BbNN
         j7R4g5olMA5sVMpOWL2QWfSosRh2A/yr6I8lSvmCtMIv7cpZj6iDkV1ASy1O0KXwJlAtsWfBCkZ2gec+
@@ -1456,39 +1393,6 @@
   </data>
   <data name="&gt;&gt;buttonFitting.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="&gt;&gt;buttonSettings.Name" xml:space="preserve">
-    <value>buttonSettings</value>
-  </data>
-  <data name="&gt;&gt;buttonSettings.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonSettings.Parent" xml:space="preserve">
-    <value>panelFinalization</value>
-  </data>
-  <data name="&gt;&gt;buttonSettings.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panelFinalization.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 476</value>
-  </data>
-  <data name="panelFinalization.Size" type="System.Drawing.Size, System.Drawing">
-    <value>304, 65</value>
-  </data>
-  <data name="panelFinalization.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;panelFinalization.Name" xml:space="preserve">
-    <value>panelFinalization</value>
-  </data>
-  <data name="&gt;&gt;panelFinalization.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelFinalization.Parent" xml:space="preserve">
-    <value>sideBarContainer</value>
-  </data>
-  <data name="&gt;&gt;panelFinalization.ZOrder" xml:space="preserve">
-    <value>6</value>
   </data>
   <data name="buttonSettings.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1546,6 +1450,81 @@
   <metadata name="sideBarTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>160, 17</value>
   </metadata>
+  <data name="&gt;&gt;guna2ButtonREUG.Name" xml:space="preserve">
+    <value>guna2ButtonREUG</value>
+  </data>
+  <data name="&gt;&gt;guna2ButtonREUG.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;guna2ButtonREUG.Parent" xml:space="preserve">
+    <value>guna2PanelTabs</value>
+  </data>
+  <data name="&gt;&gt;guna2ButtonREUG.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;guna2ButtonRECD.Name" xml:space="preserve">
+    <value>guna2ButtonRECD</value>
+  </data>
+  <data name="&gt;&gt;guna2ButtonRECD.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;guna2ButtonRECD.Parent" xml:space="preserve">
+    <value>guna2PanelTabs</value>
+  </data>
+  <data name="&gt;&gt;guna2ButtonRECD.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;guna2ButtonAudiogram.Name" xml:space="preserve">
+    <value>guna2ButtonAudiogram</value>
+  </data>
+  <data name="&gt;&gt;guna2ButtonAudiogram.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;guna2ButtonAudiogram.Parent" xml:space="preserve">
+    <value>guna2PanelTabs</value>
+  </data>
+  <data name="&gt;&gt;guna2ButtonAudiogram.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;guna2ButtonPatient.Name" xml:space="preserve">
+    <value>guna2ButtonPatient</value>
+  </data>
+  <data name="&gt;&gt;guna2ButtonPatient.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;guna2ButtonPatient.Parent" xml:space="preserve">
+    <value>guna2PanelTabs</value>
+  </data>
+  <data name="&gt;&gt;guna2ButtonPatient.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="guna2PanelTabs.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="guna2PanelTabs.Location" type="System.Drawing.Point, System.Drawing">
+    <value>94, 31</value>
+  </data>
+  <data name="guna2PanelTabs.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1142, 95</value>
+  </data>
+  <data name="guna2PanelTabs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1142, 112</value>
+  </data>
+  <data name="guna2PanelTabs.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;guna2PanelTabs.Name" xml:space="preserve">
+    <value>guna2PanelTabs</value>
+  </data>
+  <data name="&gt;&gt;guna2PanelTabs.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;guna2PanelTabs.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;guna2PanelTabs.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="guna2ButtonREUG.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
   </data>
@@ -1674,33 +1653,6 @@
   </data>
   <data name="&gt;&gt;guna2ButtonPatient.ZOrder" xml:space="preserve">
     <value>3</value>
-  </data>
-  <data name="guna2PanelTabs.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="guna2PanelTabs.Location" type="System.Drawing.Point, System.Drawing">
-    <value>94, 31</value>
-  </data>
-  <data name="guna2PanelTabs.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1142, 95</value>
-  </data>
-  <data name="guna2PanelTabs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1142, 112</value>
-  </data>
-  <data name="guna2PanelTabs.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;guna2PanelTabs.Name" xml:space="preserve">
-    <value>guna2PanelTabs</value>
-  </data>
-  <data name="&gt;&gt;guna2PanelTabs.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;guna2PanelTabs.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;guna2PanelTabs.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="panelShadowHolder.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>

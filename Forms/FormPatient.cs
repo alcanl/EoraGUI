@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing;
+using System.Diagnostics.Tracing;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -16,15 +18,17 @@ namespace EoraGuiDemo
     public partial class FormPatient : Form
     {
         private bool sideBarExpand = false;
-        private bool _isFullScreen;
+        public bool isFullScreen = false;
         private readonly Control userControlPatient;
         private readonly Control userControlAudiogram;
+        
         public FormPatient()
         {
             InitializeComponent();
             userControlPatient = new UserControlPatient();
             userControlAudiogram = new UserControlAudiogram();
             this.guna2ButtonPatient.PerformClick();
+            
         }
         private void MenuStripMainFile_MouseLeave(Object sender, EventArgs e)
         {
@@ -32,11 +36,12 @@ namespace EoraGuiDemo
         }
         private void ButtonExit_Click(object sender, EventArgs e)
         {
-            CommonEvents.ButtonExit_Click(this);
+            CommonEvents.ButtonExit_Click();
         }
         private void ButtonMaximize_Click(object sender, EventArgs e)
         {
-            CommonEvents.ButtonMaximize_Click(this, this.buttonMaximize, ref _isFullScreen);
+            CommonEvents.ButtonMaximize_Click(this, this.buttonMaximize, ref isFullScreen);
+            
         }
         private void ButtonMinimize_Click(object sender, EventArgs e)
         {
@@ -113,7 +118,7 @@ namespace EoraGuiDemo
         }
         private void flowLayoutPanelScreenConf_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            CommonEvents.ButtonMaximize_Click(this, this.buttonMaximize, ref _isFullScreen);
+            CommonEvents.ButtonMaximize_Click(this, this.buttonMaximize, ref isFullScreen);
         }
         private void guna2ButtonPatient_Click(object sender, EventArgs e)
         {
@@ -123,8 +128,11 @@ namespace EoraGuiDemo
         {
             CommonEvents.AddControlToPanel(this.panelShadowHolder, userControlAudiogram);
         }
-        public void SetIsFullScreen(bool isFullScreen)
-        { _isFullScreen = isFullScreen; }
+        private void buttonHome_MouseClick(object sender, MouseEventArgs e)
+        {
+            this.Hide();
+            System.Windows.Forms.Application.OpenForms[0].Visible = true;   
+        }
     }
 }
     

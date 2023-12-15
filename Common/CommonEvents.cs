@@ -14,7 +14,7 @@ namespace EoraGuiDemo.Common
         {
             toolStripMenuItem.ForeColor = Color.Black;
         }
-        public static void ButtonExit_Click(Form form)
+        public static void ButtonExit_Click()
         {
             var answer = MessageBox.Show("Are you sure to close the application?", "Warning",
                 MessageBoxButtons.YesNo);

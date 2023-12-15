@@ -313,6 +313,7 @@
             this.buttonHome.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.buttonHome.Name = "buttonHome";
             this.buttonHome.UseVisualStyleBackColor = true;
+            this.buttonHome.MouseClick += new System.Windows.Forms.MouseEventHandler(this.buttonHome_MouseClick);
             // 
             // panelPatient
             // 
@@ -530,7 +531,6 @@
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelScreenConf;
         private System.Windows.Forms.Button buttonExit;
-        private System.Windows.Forms.Button buttonMaximize;
         private System.Windows.Forms.Button buttonMinimize;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Panel panel11;
@@ -565,5 +565,6 @@
         private System.Windows.Forms.Label labelSession;
         private System.Windows.Forms.Panel panelShadowHolder;
         private System.Windows.Forms.Timer sideBarTimer;
+        public System.Windows.Forms.Button buttonMaximize;
     }
 }
