@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Navigation;
+using EoraGuiDemo.AudiogramData;
 
 namespace EoraGuiDemo.Entity
 {
@@ -16,7 +17,7 @@ namespace EoraGuiDemo.Entity
         public string Adress { get; set; }
         public string PhoneNumber { get; set; }
         public string Description { get; set; }
-        public IAudiogramData AudiogramData { get; set; }
+        public AudiogramData.AudiogramData AudiogramData { get; set; }
         public ISessionData SessionData { get; set; }
         public string Fullname { get => String.Format("{0} {1}", this.Name, this.LastName); }
 

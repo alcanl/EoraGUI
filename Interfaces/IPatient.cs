@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EoraGuiDemo.AudiogramData;
 
 namespace EoraGuiDemo.Interfaces
 {
@@ -15,7 +16,7 @@ namespace EoraGuiDemo.Interfaces
         string Adress {  get; set; }
         string PhoneNumber { get; set; }
         string Description { get; set; }
-        IAudiogramData AudiogramData { get; set; }
+        AudiogramData.AudiogramData AudiogramData { get; set; }
         ISessionData SessionData { get; set; }
         int Age();
     }

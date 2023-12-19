@@ -37,7 +37,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.guna2ShadowPanelMain = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.ShadowPanelMain = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.ButtonDeleteSession = new Guna.UI2.WinForms.Guna2Button();
             this.ButtonCreateSession = new Guna.UI2.WinForms.Guna2Button();
             this.ButtonDeletePatient = new Guna.UI2.WinForms.Guna2Button();
@@ -62,7 +62,7 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.patientBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.patientListDTOBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.guna2ShadowPanelMain.SuspendLayout();
+            this.ShadowPanelMain.SuspendLayout();
             this.tableLayoutPanelPatient.SuspendLayout();
             this.guna2PanelNotes.SuspendLayout();
             this.guna2PanelSessionList.SuspendLayout();
@@ -75,27 +75,27 @@
             ((System.ComponentModel.ISupportInitialize)(this.patientListDTOBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
-            // guna2ShadowPanelMain
+            // ShadowPanelMain
             // 
-            this.guna2ShadowPanelMain.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanelMain.Controls.Add(this.ButtonDeleteSession);
-            this.guna2ShadowPanelMain.Controls.Add(this.ButtonCreateSession);
-            this.guna2ShadowPanelMain.Controls.Add(this.ButtonDeletePatient);
-            this.guna2ShadowPanelMain.Controls.Add(this.ButtonEditPatient);
-            this.guna2ShadowPanelMain.Controls.Add(this.ButtonSaveNotes);
-            this.guna2ShadowPanelMain.Controls.Add(this.ButtonNewPatient);
-            this.guna2ShadowPanelMain.Controls.Add(this.tableLayoutPanelPatient);
-            this.guna2ShadowPanelMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2ShadowPanelMain.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanelMain.Location = new System.Drawing.Point(0, 0);
-            this.guna2ShadowPanelMain.Margin = new System.Windows.Forms.Padding(0);
-            this.guna2ShadowPanelMain.MinimumSize = new System.Drawing.Size(1029, 586);
-            this.guna2ShadowPanelMain.Name = "guna2ShadowPanelMain";
-            this.guna2ShadowPanelMain.Radius = 5;
-            this.guna2ShadowPanelMain.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanelMain.ShadowShift = 30;
-            this.guna2ShadowPanelMain.Size = new System.Drawing.Size(1142, 610);
-            this.guna2ShadowPanelMain.TabIndex = 1;
+            this.ShadowPanelMain.BackColor = System.Drawing.Color.Transparent;
+            this.ShadowPanelMain.Controls.Add(this.ButtonDeleteSession);
+            this.ShadowPanelMain.Controls.Add(this.ButtonCreateSession);
+            this.ShadowPanelMain.Controls.Add(this.ButtonDeletePatient);
+            this.ShadowPanelMain.Controls.Add(this.ButtonEditPatient);
+            this.ShadowPanelMain.Controls.Add(this.ButtonSaveNotes);
+            this.ShadowPanelMain.Controls.Add(this.ButtonNewPatient);
+            this.ShadowPanelMain.Controls.Add(this.tableLayoutPanelPatient);
+            this.ShadowPanelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ShadowPanelMain.FillColor = System.Drawing.Color.White;
+            this.ShadowPanelMain.Location = new System.Drawing.Point(0, 0);
+            this.ShadowPanelMain.Margin = new System.Windows.Forms.Padding(0);
+            this.ShadowPanelMain.MinimumSize = new System.Drawing.Size(1029, 586);
+            this.ShadowPanelMain.Name = "ShadowPanelMain";
+            this.ShadowPanelMain.Radius = 5;
+            this.ShadowPanelMain.ShadowColor = System.Drawing.Color.Black;
+            this.ShadowPanelMain.ShadowShift = 30;
+            this.ShadowPanelMain.Size = new System.Drawing.Size(1142, 610);
+            this.ShadowPanelMain.TabIndex = 1;
             // 
             // ButtonDeleteSession
             // 
@@ -502,7 +502,7 @@
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.richTextBox1.Location = new System.Drawing.Point(0, 0);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(0);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(352, 200);
             this.richTextBox1.TabIndex = 0;
@@ -520,13 +520,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.guna2ShadowPanelMain);
+            this.Controls.Add(this.ShadowPanelMain);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.MaximumSize = new System.Drawing.Size(1500, 900);
             this.MinimumSize = new System.Drawing.Size(1142, 610);
             this.Name = "UserControlPatient";
             this.Size = new System.Drawing.Size(1142, 610);
-            this.guna2ShadowPanelMain.ResumeLayout(false);
+            this.ShadowPanelMain.ResumeLayout(false);
             this.tableLayoutPanelPatient.ResumeLayout(false);
             this.guna2PanelNotes.ResumeLayout(false);
             this.guna2PanelNotes.PerformLayout();
@@ -546,7 +546,7 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanelMain;
+        private Guna.UI2.WinForms.Guna2ShadowPanel ShadowPanelMain;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelPatient;
         private Guna.UI2.WinForms.Guna2Panel guna2PanelPatientList;
         private Guna.UI2.WinForms.Guna2Panel guna2PanelNotes;

@@ -84,8 +84,11 @@ namespace EoraGuiDemo.Common
             panelMenu.BackColor = Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
         }
         public static void AddControlToPanel(Panel panel, Control control) 
-        { 
+        {
+            ClearPanel(panel);
             panel.Controls.Add(control);
         }
+        private static void ClearPanel(Panel panel)
+        { panel.Controls.Clear();}
     }
 }

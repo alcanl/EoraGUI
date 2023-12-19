@@ -185,6 +185,7 @@
             this.ButtonUser.Image = ((System.Drawing.Image)(resources.GetObject("ButtonUser.Image")));
             this.ButtonUser.ImageOffset = new System.Drawing.Point(0, 0);
             this.ButtonUser.ImageRotate = 0F;
+            this.ButtonUser.ImageSize = new System.Drawing.Size(74, 74);
             this.ButtonUser.Location = new System.Drawing.Point(65, 15);
             this.ButtonUser.Name = "ButtonUser";
             this.ButtonUser.PressedState.ImageSize = new System.Drawing.Size(64, 64);

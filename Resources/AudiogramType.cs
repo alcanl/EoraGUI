@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EoraGuiDemo.Interfaces
+namespace EoraGuiDemo.Resources
 {
-    public interface IAudiogramData
+    public enum AudiogramType
     {
+        AIR_CONDUCTION, BONE_CONDUCTION, UCL, MCL
     }
 }
