@@ -27,5 +27,10 @@ namespace EoraGuiDemo.Forms.ControlForms
                 return handleParams;
             }
         }
+
+        private void patientListDTOBindingSource1_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -60,8 +60,7 @@
             this.DataGridViewSession = new Guna.UI2.WinForms.Guna2DataGridView();
             this.PanelNotes = new Guna.UI2.WinForms.Guna2Panel();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.patientBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.patientListDTOBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.patientListDTOBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ShadowPanelMain.SuspendLayout();
             this.tableLayoutPanelPatient.SuspendLayout();
             this.guna2PanelNotes.SuspendLayout();
@@ -71,8 +70,7 @@
             this.PanelSessionData.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewSession)).BeginInit();
             this.PanelNotes.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.patientBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.patientListDTOBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.patientListDTOBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // ShadowPanelMain
@@ -332,6 +330,7 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.LightGray;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
             this.guna2DataGridViewPatientList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.guna2DataGridViewPatientList.AutoGenerateColumns = false;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -347,6 +346,7 @@
             this.Lastname,
             this.birthdateDataGridViewTextBoxColumn,
             this.PhoneNumber});
+            this.guna2DataGridViewPatientList.DataSource = this.patientListDTOBindingSource;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -508,13 +508,10 @@
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             // 
-            // patientBindingSource
+            // patientListDTOBindingSource
             // 
-            this.patientBindingSource.DataSource = typeof(EoraGuiDemo.Entity.Patient);
-            // 
-            // patientListDTOBindingSource1
-            // 
-            this.patientListDTOBindingSource1.DataSource = typeof(EoraGuiDemo.DTO.PatientListDTO);
+            this.patientListDTOBindingSource.DataSource = typeof(EoraGuiDemo.DTO.PatientListDTO);
+            this.patientListDTOBindingSource.CurrentChanged += new System.EventHandler(this.patientListDTOBindingSource1_CurrentChanged);
             // 
             // UserControlPatient
             // 
@@ -538,8 +535,7 @@
             this.PanelSessionData.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewSession)).EndInit();
             this.PanelNotes.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.patientBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.patientListDTOBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.patientListDTOBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -557,12 +553,11 @@
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridViewPatientList;
         private Guna.UI2.WinForms.Guna2Panel PanelSessionData;
         private Guna.UI2.WinForms.Guna2DataGridView DataGridViewSession;
-        private System.Windows.Forms.BindingSource patientBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn Lastname;
         private System.Windows.Forms.DataGridViewTextBoxColumn PhoneNumber;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn birthdateDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource patientListDTOBindingSource1;
+        private System.Windows.Forms.BindingSource patientListDTOBindingSource;
         private Guna.UI2.WinForms.Guna2Button ButtonNewPatient;
         private Guna.UI2.WinForms.Guna2Button ButtonSaveNotes;
         private Guna.UI2.WinForms.Guna2Button ButtonDeletePatient;

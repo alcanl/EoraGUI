@@ -1,21 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Web.UI.WebControls;
 using System.Windows.Forms;
-using System.Windows.Media;
-using EoraGuiDemo.AudiogramData;
-using EoraGuiDemo.Resources;
-using Guna.Charts.Interfaces;
 using Guna.Charts.WinForms;
-using LiveCharts;
-using LiveCharts.Defaults;
-using LiveCharts.Wpf;
 using Brush = System.Windows.Media.Brush;
 using Brushes = System.Drawing.Brushes;
 using Color = System.Drawing.Color;
@@ -26,7 +12,7 @@ namespace EoraGuiDemo.Forms.ControlForms
     public partial class UserControlAudiogram : UserControl
     {
         private AudiogramData.AudiogramData _audiogram;
-        /*protected override CreateParams CreateParams
+        protected override CreateParams CreateParams
         {
             get
             {
@@ -34,17 +20,19 @@ namespace EoraGuiDemo.Forms.ControlForms
                 handleParams.ExStyle |= 0x2000000;
                 return handleParams;
             }
-        } */
+        } 
         public UserControlAudiogram()
         {
             _audiogram = new AudiogramData.AudiogramData();
             InitializeComponent();
             this.Dock = DockStyle.Fill;
+            handleAudiogramDraw();
+
         }
 
         private void UserControlAudiogram_Load(object sender, EventArgs e)
         {
-            handleAudiogramDraw();
+            
         }
         public void setAudiogram(AudiogramData.AudiogramData audiogram) 
         {
@@ -53,20 +41,29 @@ namespace EoraGuiDemo.Forms.ControlForms
         private void handleAudiogramDraw()
         {
             string[] frequency = { "125", "250", "500", "1000", "2000", "4000", "8000" };
-            var pointColors = new List<Color>();
-            pointColors.Add(Color.Blue);
+            var pointColorsRed = new List<Color>();
+            pointColorsRed.Add(Color.Firebrick);
+            var pointColorsBlue = new List<Color>();
+            pointColorsBlue.Add(Color.SteelBlue);
 
-            AirConductionRight.PointBorderColors = new ColorCollection(pointColors);
-            AirConductionRight.PointFillColors = new ColorCollection(pointColors);
+            AirConductionRight.PointBorderColors = new ColorCollection(pointColorsRed);
+            AirConductionRight.PointFillColors = new ColorCollection(pointColorsRed);
+            AirConductionLeft.PointBorderColors = new ColorCollection(pointColorsRed);
+            AirConductionLeft.PointFillColors = new ColorCollection(pointColorsRed);
+            BoneConductionRight.FillColors = new ColorCollection(pointColorsBlue);
+            BoneConductionRight.BorderColors = new ColorCollection(pointColorsBlue);
             
             
             for (int i = 0; i < frequency.Length; i++)
             {
-                AirConductionRight.DataPoints.Add(frequency[i], 0);
+                AirConductionRight.DataPoints.Add(frequency[i], 25);
+                AirConductionLeft.DataPoints.Add(frequency[i], 0);
+                
             }
-
+            chartLeftEar.Datasets.Add(AirConductionLeft);
             chartRightEar.Datasets.Add(AirConductionRight);
             chartRightEar.Update();
+            chartLeftEar.Update();
         }
 
         private void chartRightEar_MouseClick(object sender, MouseEventArgs e)
@@ -74,7 +71,7 @@ namespace EoraGuiDemo.Forms.ControlForms
             chartRightEar.Datasets.Clear();
             AirConductionRight.DataPoints.Update(1, new LPoint("TEST", 450));
             
-            chartRightEar.Update();
+            chartRightEar.Invalidate();
             MessageBox.Show("Test", "Test");
         }
     }
